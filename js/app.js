@@ -1,5 +1,7 @@
 import html from './html.js';
 import Header from './header.js';
+import GameInfo from './sign-in.js';
+
 
 function makeTemplate() {
     return html`
@@ -22,5 +24,6 @@ class App {
 
 const app = new App();
 const root = document.getElementById('root');
+const gameInfo = new GameInfo();
 root.appendChild(app.render());
-
+root.appendChild(gameInfo.render());
