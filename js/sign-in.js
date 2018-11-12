@@ -21,16 +21,9 @@ export default class GameInfo {
         form.addEventListener('submit', function(event) {
             event.preventDefault();
             console.log('clicked!');
+            window.location.href = '../input.html';
         });
         console.log(form);
         return dom;
     }
 }
-
-
-// form.addEventListener('click', function() {
-//     event.preventDefault();
-//     console.log('clicked!');
-// });
-
-
