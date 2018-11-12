@@ -17,17 +17,20 @@ function makeTemplate() {
 export default class GameInfo {
     render() {
         let dom = makeTemplate();
+        const form = dom.getElementById('user-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log('clicked!');
+        });
+        console.log(form);
         return dom;
     }
 }
 
-const playerForm = {
-    init() {
-        const form = document.getElementById('user-form');
-        form.addEventListener('submit', function() {
-            event.preventDefault();
-            console.log('submitted!');
-            form.reset();
-        });
-    }
-};
+
+// form.addEventListener('click', function() {
+//     event.preventDefault();
+//     console.log('clicked!');
+// });
+
+
