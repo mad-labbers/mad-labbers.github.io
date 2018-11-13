@@ -15,7 +15,9 @@ function makeTemplate() {
         <h2>Connor Frendt</h2>
         <img src="images/Connor.jpeg" alt="photo-of-Connor"/>
         
-        <p>We are a team of Mad Labbers,..... </p>
+        <p>We are "Mad Labbers", a team of budding Developers attending Alchemy Code Lab in
+        Portland, Oregon. We are in our final week of Boot Camp I. Our team has created this
+        fun Mad Libs App together and we hope that you enjoy it! </p>
     `;
 }
 
