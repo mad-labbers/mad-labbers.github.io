@@ -7,13 +7,20 @@ function makeTemplate() {
     <h1>Sign In</h1>
     <form id="user-form">
         <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <input type="radio" id="piranha" name="story" value="piranha" required />How to Cross a Piranha-Infested River
-            <input type="radio" id="wedding" name="story" value="wedding" required />Wedding Advice for the Happy Couple
-            <input type="radio" id="alchemy" name="story" value="alchemy" required />Alchemy
-            <div>
-                <button id="play-button">Play!</button>
-            </div>
+        <input type="text" id="name" name="name">
+            
+        <input type="radio" id="piranha" name="story" value="piranha" required />
+        <label for="piranha">How to Cross a Piranha-Infested River</label>
+        
+        <input type="radio" id="wedding" name="story" value="wedding" required />
+        <label for="wedding">Wedding Advice for the Happy Couple</label>
+
+        <input type="radio" id="alchemy" name="story" value="alchemy" required />
+        <label for="alchemy">Alchemy</label>
+
+        <div class="button">
+            <button id="play-button">Play!</button>
+        </div>
     </form>
     `;
 }

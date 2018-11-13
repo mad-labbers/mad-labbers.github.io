@@ -6,45 +6,70 @@ function makeTemplate() {
         <form id="game">
             <fieldset>
                 <Legend>Enter a Word</Legend>
+                <div>
+                    <label for="foreign-country">Foreign Country</label>
+                    <input class="word" type="text" name="foreign-country" id="foreign-country">
+                </div>
 
-                <label for="foreign-country">Foreign Country</label>
-                <input class="word" type="text" name="foreign-country" id="foreign-country">
+                <div>    
+                    <label for="adverb1">Adverb</label>
+                    <input class="word" type="text" name="adverb1" id="adverb1">
+                </div>
+
+                <div>
+                    <label for="adjective1">Adjective</label>
+                    <input class="word" type="text" name="adjective1" id="adjective1">
+                </div>  
+
+                <div>
+                    <label for="animal">Animal</label>
+                    <input class="word" type="text" name="animal" id="animal">
+                </div>
+
+                <div>
+                    <label for="verb-ing1">Verb (ending in -ing)</label>
+                    <input class="word" type="text" name="verb-ing1" id="verb-ing1">
+                </div>
+
+                <div>
+                    <label for="verb1">Verb</label>
+                    <input class="word" type="text" name="verb1" id="verb1">
+                </div> 
+
+                <div>
+                    <label for="verb-ing2">Verb (ending in -ing)</label>
+                    <input class="word" type="text" name="verb-ing2" id="verb-ing2">
+                </div>  
+
+                <div>
+                    <label for="adverb2">Adverb</label>
+                    <input class="word" type="text" name="adverb2" id="adverb2">
+                </div> 
+                 
+                <div>
+                    <label for="adjective2">Adjective</label>
+                    <input class="word" type="text" name="adjective2" id="adjective2">
+                </div> 
+
+                <div>
+                    <label for="a-place">A Place</label>
+                    <input class="word" type="text" name="a-place" id="a-place">
+                </div>  
+
+                <div>
+                    <label for="type-of-liquid">Type of Liquid</label>
+                    <input class="word" type="text" name="type-of-liquid" id="type-of-liquid">
+                </div>
+
+                <div>
+                    <label for="body-part">Body Part</label>
+                    <input class="word" type="text" name="body-part" id="body-part">
+                </div>    
                 
-                <label for="adverb1">Adverb</label>
-                <input class="word" type="text" name="adverb1" id="adverb1">
-                
-                <label for="adjective1">Adjective</label>
-                <input class="word" type="text" name="adjective1" id="adjective1">
-                
-                <label for="animal">Animal</label>
-                <input class="word" type="text" name="animal" id="animal">
-                
-                <label for="verb-ing1">Verb (ending in -ing)</label>
-                <input class="word" type="text" name="verb-ing1" id="verb-ing1">
-                
-                <label for="verb1">Verb</label>
-                <input class="word" type="text" name="verb1" id="verb1">
-                
-                <label for="verb-ing2">Verb (ending in -ing)</label>
-                <input class="word" type="text" name="verb-ing2" id="verb-ing2">
-                
-                <label for="adverb2">Adverb</label>
-                <input class="word" type="text" name="adverb2" id="adverb2">
-                
-                <label for="adjective2">Adjective</label>
-                <input class="word" type="text" name="adjective2" id="adjective2">
-                
-                <label for="a-place">A Place</label>
-                <input class="word" type="text" name="a-place" id="a-place">
-                
-                <label for="type-of-liquid">Type of Liquid</label>
-                <input class="word" type="text" name="type-of-liquid" id="type-of-liquid">
-                
-                <label for="body-part">Body Part</label>
-                <input class="word" type="text" name="body-part" id="body-part">
-                
-                <label for="verb2">Verb</label>
-                <input class="word" type="text" name="verb2" id="verb2">
+                <div>
+                    <label for="verb2">Verb</label>
+                    <input class="word" type="text" name="verb2" id="verb2">
+                </div>
             </fieldset>
 
             <button type="submit">Submit</button>
