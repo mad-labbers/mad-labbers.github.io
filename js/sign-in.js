@@ -1,4 +1,6 @@
 import html from './html.js';
+import userApi from '../data/user-api.js';
+
 
 function makeTemplate() {
     return html `
@@ -18,6 +20,10 @@ function makeTemplate() {
 }
 
 export default class GameInfo {
+    constructor() {
+        this.name = userApi.getAll();
+    }
+
     render() {
         let dom = makeTemplate();
         const form = dom.getElementById('user-form');
