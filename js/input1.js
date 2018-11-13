@@ -52,7 +52,7 @@ function makeTemplate() {
     `;
 }
 
-export default class Game {
+export default class Game1 {
     constructor() {
         this.userResponses = inputApi.getAll();
     }

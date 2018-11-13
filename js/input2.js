@@ -67,7 +67,7 @@ function makeTemplate() {
     `;
 }
 
-export default class Game {
+export default class Game2 {
     constructor() {
         this.userResponses = inputApi.getAll();
     }
@@ -80,19 +80,24 @@ export default class Game {
             const elements = form.elements;
             const userResponse = {};
 
-            userResponse.foreignCountry = elements['foreign-country'].value;
-            userResponse.adverb1 = elements.adverb1.value;
-            userResponse.adjective1 = elements.adjective1.value;
-            userResponse.animal = elements.animal.value;
-            userResponse.verbIng1 = elements['verb-ing1'].value;
-            userResponse.verb1 = elements.verb1.value;
-            userResponse.verbIng2 = elements['verb-ing2'].value;
-            userResponse.adverb2 = elements.adverb2.value;
+            userResponse.noun = elements.noun.value;
+            userResponse.number = elements.number.value;
+            userResponse.verb = elements.verb.value;
+            userResponse.noun2 = elements.noun2.value;
+            userResponse.adjective = elements.adjective.value;
             userResponse.adjective2 = elements.adjective2.value;
-            userResponse.aPlace = elements['a-place'].value;
-            userResponse.typeOfLiquid = elements['type-of-liquid'].value;
-            userResponse.bodyPart = elements['body-part'].value;
+            userResponse.noun3 = elements.noun3.value;
+            userResponse.adjective3 = elements.adjective3.value;
+            userResponse.noun4 = elements.noun4.value;
             userResponse.verb2 = elements.verb2.value;
+            userResponse.verb3 = elements.verb3.value;
+            userResponse.noun5 = elements.noun5.value;
+            userResponse.verb4 = elements.verb4.value;
+            userResponse.noun6 = elements.noun6.value;
+            userResponse.verb5 = elements.verb5.value;
+            userResponse.noun7 = elements.noun7.value;
+            userResponse.noun8 = elements.noun8.value;
+            userResponse.name = elements.name.value;
             
             inputApi.add(userResponse);
             
