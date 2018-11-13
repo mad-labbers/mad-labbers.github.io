@@ -1,5 +1,5 @@
 import html from './html.js';
-import inputApi from './data/input-api.js';
+import inputApi from '../data/input-api.js';
 
 function makeTemplate() {
     return html`
@@ -52,7 +52,7 @@ function makeTemplate() {
 
 export default class Game {
     constructor() {
-        this.words = inputApi.getAll();
+        this.userResponse = inputApi.getAll();
     }
     
     render() {
@@ -80,6 +80,6 @@ export default class Game {
             inputApi.add(userResponse);
             window.location = './results.html';
         });
-        return dom();
+        return dom;
     }
 }
