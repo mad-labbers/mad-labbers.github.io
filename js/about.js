@@ -2,11 +2,18 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
-        <header></header>
+        
+    <div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+    
+    
 
-        <h2>Kristin Hortsch</h2>
+        <div>Kristin Hortsch</div>
         <img src="images/kristin.jpeg" alt="photo-of-kristin"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Kristin is.....learning to code at Alchemy Code.</p>
         
         <h2>Ivan Poblete</h2>
         <img src="images/Ivan.jpeg" alt="photo-of-Ivan"/>
