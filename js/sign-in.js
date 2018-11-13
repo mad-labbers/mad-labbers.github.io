@@ -30,3 +30,7 @@ export default class GameInfo {
         return dom;
     }
 }
+
+const gameInfo = new GameInfo();
+const root = document.getElementById('root');
+root.appendChild(gameInfo.render());

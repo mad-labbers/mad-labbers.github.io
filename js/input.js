@@ -46,6 +46,8 @@ function makeTemplate() {
                 <label for="verb2">Verb</label>
                 <input class="word" type="text" name="verb2" id="verb2">
             </fieldset>
+
+            <button type="submit">Submit</button>
         </form>
     `;
 }
@@ -63,7 +65,7 @@ export default class Game {
             const elements = form.elements;
             const userResponse = {};
 
-            userResponse.foreignCountry = elements.foreignCountry.value;
+            userResponse.foreignCountry = elements['foreign-country'].value;
             userResponse.adverb1 = elements.adverb1.value;
             userResponse.adjective1 = elements.adjective1.value;
             userResponse.animal = elements.animal.value;
