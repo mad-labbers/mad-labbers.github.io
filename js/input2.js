@@ -7,8 +7,8 @@ function makeTemplate() {
             <fieldset>
                 <Legend>Enter a Word</Legend>
 
-                <label for="noun">Noun</label>
-                <input class="word" type="text" name="noun" id="noun">
+                <label for="name">Your Name</label>
+                <input class="word" type="text" name="name" id="name">
                 
                 <label for="number">Number</label>
                 <input class="word" type="number" name="number" id="number">
@@ -40,26 +40,26 @@ function makeTemplate() {
                 <label for="verb3">Verb</label>
                 <input class="word" type="text" name="verb3" id="verb3">
                 
+                <label for="verb4">Verb</label>
+                <input class="word" type="text" name="verb4" id="verb4">
+
                 <label for="noun5">Noun</label>
                 <input class="word" type="text" name="noun5" id="noun5">
                 
-                <label for="verb4">Verb</label>
-                <input class="word" type="text" name="verb4" id="verb4">
+                <label for="verb5">Verb</label>
+                <input class="word" type="text" name="verb5" id="verb5">
 
                 <label for="noun6">Noun</label>
                 <input class="word" type="text" name="noun6" id="noun6">
 
-                <label for="verb5">Verb</label>
-                <input class="word" type="text" name="verb5" id="verb5">
+                <label for="verb6">Verb</label>
+                <input class="word" type="text" name="verb6" id="verb6">
 
                 <label for="noun7">Noun</label>
                 <input class="word" type="text" name="noun7" id="noun7">
                 
                 <label for="noun8">Noun</label>
                 <input class="word" type="text" name="noun8" id="noun8">
-
-                <label for="name">Your Name</label>
-                <input class="word" type="text" name="name" id="name">
             </fieldset>
 
             <button type="submit">Submit</button>
@@ -80,7 +80,7 @@ export default class Game2 {
             const elements = form.elements;
             const userResponse = {};
 
-            userResponse.noun = elements.noun.value;
+            userResponse.name = elements.name.value;
             userResponse.number = elements.number.value;
             userResponse.verb = elements.verb.value;
             userResponse.noun2 = elements.noun2.value;
@@ -91,13 +91,13 @@ export default class Game2 {
             userResponse.noun4 = elements.noun4.value;
             userResponse.verb2 = elements.verb2.value;
             userResponse.verb3 = elements.verb3.value;
-            userResponse.noun5 = elements.noun5.value;
             userResponse.verb4 = elements.verb4.value;
-            userResponse.noun6 = elements.noun6.value;
+            userResponse.noun5 = elements.noun5.value;
             userResponse.verb5 = elements.verb5.value;
+            userResponse.noun6 = elements.noun6.value;
+            userResponse.verb6 = elements.verb6.value;
             userResponse.noun7 = elements.noun7.value;
             userResponse.noun8 = elements.noun8.value;
-            userResponse.name = elements.name.value;
             
             inputApi.add(userResponse);
             
