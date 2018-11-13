@@ -54,7 +54,7 @@ function makeTemplate() {
 
 export default class Game {
     constructor() {
-        this.userResponse = inputApi.getAll();
+        this.userResponses = inputApi.getAll();
     }
     
     render() {
@@ -78,7 +78,9 @@ export default class Game {
             userResponse.typeOfLiquid = elements['type-of-liquid'].value;
             userResponse.bodyPart = elements['body-part'].value;
             userResponse.verb2 = elements.verb2.value;
+            
             inputApi.add(userResponse);
+            
             window.location = './results.html';
         });
         return dom;

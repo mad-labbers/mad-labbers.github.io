@@ -1,24 +1,18 @@
-let userResponses = [];
-
-function saveUserResponses() {
-    localStorage.setItem('userResponses', JSON.stringify(userResponses));
+function saveUserResponses(userResponse) {
+    localStorage.setItem('userResponse', JSON.stringify(userResponse));
 }
 
 
 const inputApi = {
     getAll() {
-        const json = localStorage.getItem('userResponses');
-        if(json) {
-            userResponses = JSON. parse(json);
-        }
-        return userResponses;
+        return JSON.parse(localStorage.getItem('userResponse'));
     },
     
     add(userResponse) {
         // 1. add to our array
-        userResponses.push(userResponse);
+        // userResponses.push(userResponse);
         // 2. save array to localStorage
-        saveUserResponses();
+        saveUserResponses(userResponse);
     }
 };
 

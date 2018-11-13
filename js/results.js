@@ -20,7 +20,6 @@ export default class Results {
     render() {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
-
         const story1 = new Story1(this.userResponse);
         storySection.appendChild(story1.render());
 
