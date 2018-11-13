@@ -1,6 +1,6 @@
 let userResponses = [];
 
-function saveuserResponses() {
+function saveUserResponses() {
     localStorage.setItem('userResponses', JSON.stringify(userResponses));
 }
 
@@ -18,7 +18,7 @@ const inputApi = {
         // 1. add to our array
         userResponses.push(userResponse);
         // 2. save array to localStorage
-        saveuserResponses();
+        saveUserResponses();
     }
 };
 
