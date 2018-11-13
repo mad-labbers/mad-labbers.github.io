@@ -5,7 +5,7 @@ function makeTemplate() {
     return html`
         <header></header>
         <main>
-            <p>This is our game!</p>
+            
         </main>
     `;
 }

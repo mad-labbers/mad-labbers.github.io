@@ -7,14 +7,20 @@ function makeTemplate() {
     <h1>Sign In</h1>
     <form id="user-form">
         <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <input type="radio" id="game-a" name="story" value="game-a" required />Game A
-            <input type="radio" id="game-b" name="story" value="game-b" required />Game B
-            <input type="radio" id="game-c" name="story" value="game-c" required />Game C
-             <br />
-             <br />
-             
-             <button id="play-button">Play!</button>
+        <input type="text" id="name" name="name">
+            
+        <input type="radio" id="piranha" name="story" value="piranha" required />
+        <label for="piranha">How to Cross a Piranha-Infested River</label>
+        
+        <input type="radio" id="wedding" name="story" value="wedding" required />
+        <label for="wedding">Wedding Advice for the Happy Couple</label>
+
+        <input type="radio" id="alchemy" name="story" value="alchemy" required />
+        <label for="alchemy">Dragon</label>
+
+        <div class="button">
+            <button id="play-button">Play!</button>
+        </div>
     </form>
     `;
 }
@@ -36,7 +42,7 @@ export default class GameInfo {
             user.story = elements.story.value;
             userApi.add(user);
             console.log('user', user);
-            // window.location.href = '../game.html';
+            window.location.href = '../game.html';
         });
         
         return dom;
