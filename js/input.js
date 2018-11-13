@@ -78,7 +78,6 @@ export default class Game {
             userResponse.typeOfLiquid = elements['type-of-liquid'].value;
             userResponse.bodyPart = elements['body-part'].value;
             userResponse.verb2 = elements.verb2.value;
-            console.log(userResponse.input1);
             inputApi.add(userResponse);
             window.location = './results.html';
         });

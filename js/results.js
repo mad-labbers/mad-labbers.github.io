@@ -7,6 +7,7 @@ function makeTemplate() {
         <header></header>
         <body>
             <section class="story-result"></section>
+            <button>Play Again</button>
         </body>
     `;
 }
@@ -18,12 +19,20 @@ export default class Results {
 
     render() {
         const dom = makeTemplate();
-        const resultSection = dom.querySelector('section');
+        const storySection = dom.querySelector('.story-result');
 
         const story1 = new Story1(this.userResponse);
-        resultSection.appendChild(story1.render());
+        storySection.appendChild(story1.render());
+
+        let button = dom.querySelector('button');
+        button.addEventListener('click', function() {
+            window.location = './index.html';
+        });
+
+        return dom;
     }
 }
 
 const results = new Results();
-document.getElementById('root').appendChild(results.render());
+const resultSection = document.getElementById('root');
+resultSection.appendChild(results.render());

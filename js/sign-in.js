@@ -24,7 +24,7 @@ export default class GameInfo {
         form.addEventListener('submit', function(event) {
             event.preventDefault();
             console.log('clicked!');
-            window.location.href = '../input.html';
+            window.location.href = '../game.html';
         });
         console.log(form);
         return dom;

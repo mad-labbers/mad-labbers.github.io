@@ -1,6 +1,6 @@
 import html from './html.js';
 
-let makeTemplate = function(userResponse) {
+let template = function(userResponse) {
     return html` 
         <p>If you are traveling in ${userResponse.foreignCountry} and find yourself having to cross a Piranhas-filled river, here's how to do it ${userResponse.adverb1}: 
         <li>Piranhas are more ${userResponse.adjective1} during the day, so cross the river at night.</li>
@@ -15,7 +15,7 @@ export default class Story1 {
         this.userResponse = userResponse;
     }
     render() {
-        let dom = makeTemplate(this.userResponse);
+        let dom = template(this.userResponse);
         return dom;
     }
 }
