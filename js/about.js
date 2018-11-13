@@ -2,20 +2,27 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
-        
-        <h2>Kristin Hortsch</h2>
-        <img src="images/kristin.jpeg" alt="photo-of-kristin"/>
-        
-        <h2>Ivan Poblete</h2>
-        <img src="images/Ivan.jpeg" alt="photo-of-Ivan"/>
-        
-        <h2>Jei Shepherd</h2>
-        <img src="images/Jei.jpeg" alt="photo-of-Jei"/>
-        
-        <h2>Connor Frendt</h2>
-        <img src="images/Connor.jpeg" alt="photo-of-Connor"/>
-        
-        <p>We are a team of Mad Labbers,..... </p>
+        <section class="photos">
+            <div id="kristin">
+                <p>Kristin Hortsch</p>
+                <img src="images/kristin.jpeg" alt="photo-of-kristin"/>
+            </div>
+            
+            <div id="ivan">
+                <p>Ivan Poblete</p>
+                <img src="images/Ivan.jpeg" alt="photo-of-Ivan"/>
+            </div>
+
+            <div id="jei">
+                <p>Jei Shepherd</p>
+                <img src="images/Jei.jpeg" alt="photo-of-Jei"/>
+            </div>
+
+            <div id="connor">
+                <p>Connor Frendt</p>
+                <img src="images/Connor.jpeg" alt="photo-of-Connor"/>
+            </div>
+        </section>
     `;
 }
 
