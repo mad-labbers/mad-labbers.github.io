@@ -23,6 +23,10 @@ function makeTemplate() {
                 <img src="images/Connor.jpeg" alt="photo-of-Connor"/>
             </div>
         </section>
+        
+        <p>We are "Mad Labbers", a team of budding Developers attending Alchemy Code Lab in
+        Portland, Oregon. We are in our final week of Boot Camp I. Our team has created this
+        fun Mad Libs App together and we hope that you enjoy it! </p>
     `;
 }
 

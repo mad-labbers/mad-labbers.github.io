@@ -1,10 +1,12 @@
 import html from './html.js';
 import inputApi from '../data/input-api.js';
+import userApi from '../data/user-api.js';
 import Story1 from './story1.js';
+import Story2 from './story2.js';
+import Story3 from './story3.js';
 
 function makeTemplate() {
     return html`
-        <header></header>
         <body>
             <section class="story-result"></section>
             <button>Play Again</button>
@@ -15,13 +17,26 @@ function makeTemplate() {
 export default class Results {
     constructor() {
         this.userResponse = inputApi.getAll();
+        this.user = userApi.getAll();
     }
 
     render() {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
-        const story1 = new Story1(this.userResponse);
-        storySection.appendChild(story1.render());
+        
+        if(this.user.story === 'piranha') {
+            const story1 = new Story1(this.userResponse);
+            storySection.appendChild(story1.render());
+        }
+        else if(this.user.story === 'wedding') {
+            const story2 = new Story2(this.userResponse);
+            storySection.appendChild(story2.render());
+            console.log('story 2 picked');
+        }
+        else if(this.user.story === 'alchemy') {
+            const story3 = new Story3(this.userResponse);
+            storySection.appendChild(story3.render());
+        }
 
         let button = dom.querySelector('button');
         button.addEventListener('click', function() {
