@@ -14,13 +14,13 @@ function makeTemplate() {
 
 export default class Results {
     constructor() {
-        this.userResponse = inputApi.getAll();
+        this.userResponses = inputApi.getAll();
     }
 
     render() {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
-
+        console.log(this.userResponse.foreignCountry);
         const story1 = new Story1(this.userResponse);
         storySection.appendChild(story1.render());
 

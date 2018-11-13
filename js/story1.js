@@ -16,6 +16,7 @@ export default class Story1 {
     }
     render() {
         let dom = template(this.userResponse);
+        
         return dom;
     }
 }

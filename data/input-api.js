@@ -7,11 +7,12 @@ function saveUserResponses() {
 
 const inputApi = {
     getAll() {
-        const json = localStorage.getItem('userResponses');
-        if(json) {
-            userResponses = JSON. parse(json);
-        }
-        return userResponses;
+        // const json = localStorage.getItem('userResponses');
+        // if(json) {
+        //     userResponses = JSON. parse(json);
+        // }
+        // return userResponses;
+        return JSON.parse(localStorage.getItem('userResponses'));
     },
     
     add(userResponse) {

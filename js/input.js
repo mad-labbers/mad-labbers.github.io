@@ -54,7 +54,7 @@ function makeTemplate() {
 
 export default class Game {
     constructor() {
-        this.userResponse = inputApi.getAll();
+        this.userResponses = inputApi.getAll();
     }
     
     render() {
