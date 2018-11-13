@@ -1,0 +1,18 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+
+

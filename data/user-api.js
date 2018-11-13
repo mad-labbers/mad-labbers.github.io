@@ -1,23 +1,15 @@
-let users = [];
-
-function saveUsers() {
-    localStorage.setItem('users', JSON.stringify(users));
+function saveUsers(user) {
+    localStorage.setItem('user', JSON.stringify(user));
 }
 
 const userApi = {
 
     getAll() {
-        const json = localStorage.getItem('users');
-        if(json) {
-            users = JSON.parse(json);
-        }
-        return users;
+        return JSON.parse(localStorage.getItem('user'));
     },
 
     add(user) {
-        // user['name'] = JSON.parse(localStorage.getItem('user'));
-        users.push(user);
-        saveUsers();
+        saveUsers(user);
     }
 };
 
