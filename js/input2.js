@@ -96,7 +96,6 @@ function makeTemplate() {
                 <label for="noun8">Noun</label>
                 <input class="word" type="text" name="noun8" id="noun8">
             </div>
-
             </fieldset>
 
             <button type="submit">Submit</button>
