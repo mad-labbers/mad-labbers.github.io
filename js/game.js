@@ -6,8 +6,7 @@ import userApi from '../data/user-api.js';
 
 function makeTemplate() {
     return html`
-        <header></header>
-        <section></section>
+            <section></section>
     `;
 }
 
@@ -22,6 +21,7 @@ class Form {
         if(this.user.story === 'piranha') {
             const game = new Game1();
             gameSection.appendChild(game.render());
+
             console.log('story 1 picked');
 
         } else if(this.user.story === 'wedding') {
@@ -33,7 +33,9 @@ class Form {
             const game = new Game3();
             gameSection.appendChild(game.render());
             console.log('story 3 picked');
+
         }
+
         return dom;
     }
 }

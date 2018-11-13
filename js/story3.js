@@ -6,6 +6,7 @@ let template = function(userResponse) {
         `;
 };
 
+
 export default class Story1 {
     constructor(userResponse) {
         this.userResponse = userResponse;

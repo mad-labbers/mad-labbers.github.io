@@ -7,7 +7,6 @@ import Story3 from './story3.js';
 
 function makeTemplate() {
     return html`
-        <header></header>
         <body>
             <section class="story-result"></section>
             <button>Play Again</button>
