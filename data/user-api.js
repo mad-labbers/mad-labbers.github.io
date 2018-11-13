@@ -15,7 +15,7 @@ const userApi = {
     },
 
     add(user) {
-        user['name'] = JSON.parse(localStorage.getItem('user'));
+        // user['name'] = JSON.parse(localStorage.getItem('user'));
         users.push(user);
         saveUsers();
     }
