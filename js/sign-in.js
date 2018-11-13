@@ -11,10 +11,9 @@ function makeTemplate() {
             <input type="radio" id="game-a" name="story" value="game-a" required />Game A
             <input type="radio" id="game-b" name="story" value="game-b" required />Game B
             <input type="radio" id="game-c" name="story" value="game-c" required />Game C
-             <br />
-             <br />
-             
-             <button id="play-button">Play!</button>
+            <div>
+                <button id="play-button">Play!</button>
+            </div>
     </form>
     `;
 }
@@ -36,7 +35,7 @@ export default class GameInfo {
             user.story = elements.story.value;
             userApi.add(user);
             console.log('user', user);
-            // window.location.href = '../game.html';
+            window.location.href = '../game.html';
         });
         
         return dom;

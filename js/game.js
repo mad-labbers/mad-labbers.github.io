@@ -1,4 +1,6 @@
-import Game from './input.js';
+import Game1 from './input1.js';
+import Game2 from './input2.js';
+import Game3 from './input3.js';
 import html from './html.js';
 
 

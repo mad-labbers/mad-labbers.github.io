@@ -1,6 +1,8 @@
 import html from './html.js';
 import inputApi from '../data/input-api.js';
 import Story1 from './story1.js';
+import Story2 from './story2.js';
+import Story3 from './story3.js';
 
 function makeTemplate() {
     return html`
