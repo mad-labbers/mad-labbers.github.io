@@ -1,5 +1,50 @@
+body {
+    margin: 0px;
+}
 
+.button {
+    display: block;
+}
 
+header {
+    margin: 0px;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('../images/madlibslogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 180px;
+}
+
+nav {
+    display: flex;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+h1 {
+    padding-left: 20px;
+    font-size: 4em;
+}
+
+a {
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    text-align: center;
+    background-color: white;
+}
+
+a:hover {
+    background-color: lightblue;
+}
 
 img {
     width: 200px;
