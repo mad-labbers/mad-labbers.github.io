@@ -8,9 +8,9 @@ function makeTemplate() {
     <form id="user-form">
         <label for="name">Name:</label>
             <input type="text" id="name" name="name">
-            <input type="radio" id="game-a" name="story" value="game-a" required />Game A
-            <input type="radio" id="game-b" name="story" value="game-b" required />Game B
-            <input type="radio" id="game-c" name="story" value="game-c" required />Game C
+            <input type="radio" id="piranha" name="story" value="piranha" required />How to Cross a Piranha-Infested River
+            <input type="radio" id="wedding" name="story" value="wedding" required />Wedding Advice for the Happy Couple
+            <input type="radio" id="alchemy" name="story" value="alchemy" required />Alchemy
             <div>
                 <button id="play-button">Play!</button>
             </div>

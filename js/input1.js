@@ -19,13 +19,13 @@ function makeTemplate() {
                 <label for="animal">Animal</label>
                 <input class="word" type="text" name="animal" id="animal">
                 
-                <label for="verb-ing1">Verb-ing</label>
+                <label for="verb-ing1">Verb (ending in -ing)</label>
                 <input class="word" type="text" name="verb-ing1" id="verb-ing1">
                 
                 <label for="verb1">Verb</label>
                 <input class="word" type="text" name="verb1" id="verb1">
                 
-                <label for="verb-ing2">Verb-ing</label>
+                <label for="verb-ing2">Verb (ending in -ing)</label>
                 <input class="word" type="text" name="verb-ing2" id="verb-ing2">
                 
                 <label for="adverb2">Adverb</label>
@@ -34,13 +34,13 @@ function makeTemplate() {
                 <label for="adjective2">Adjective</label>
                 <input class="word" type="text" name="adjective2" id="adjective2">
                 
-                <label for="a-place">A place</label>
+                <label for="a-place">A Place</label>
                 <input class="word" type="text" name="a-place" id="a-place">
                 
-                <label for="type-of-liquid">Type of liquid</label>
+                <label for="type-of-liquid">Type of Liquid</label>
                 <input class="word" type="text" name="type-of-liquid" id="type-of-liquid">
                 
-                <label for="body-part">Body part</label>
+                <label for="body-part">Body Part</label>
                 <input class="word" type="text" name="body-part" id="body-part">
                 
                 <label for="verb2">Verb</label>

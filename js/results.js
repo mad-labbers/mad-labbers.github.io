@@ -25,16 +25,16 @@ export default class Results {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
         
-        if(this.user.story === 'game-a') {
+        if(this.user.story === 'piranha') {
             const story1 = new Story1(this.userResponse);
             storySection.appendChild(story1.render());
         }
-        else if(this.user.story === 'game-b') {
+        else if(this.user.story === 'wedding') {
             const story2 = new Story2(this.userResponse);
             storySection.appendChild(story2.render());
             console.log('story 2 picked');
         }
-        // else if(this.user.story === 'game-c') {
+        // else if(this.user.story === 'alchemy') {
         //     const story3 = new Story3(this.userResponse);
         //     storySection.appendChild(story3.render());
         // }
