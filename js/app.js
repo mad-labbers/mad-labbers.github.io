@@ -16,6 +16,8 @@ class App {
         const headerSection = dom.querySelector('header');
         const header = new Header();
         headerSection.appendChild(header.render());
+        
+        
         return dom;
     }
 }
