@@ -4,6 +4,7 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
+        <header></header>
         <section></section>
     `;
 }
