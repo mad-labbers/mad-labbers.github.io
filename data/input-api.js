@@ -1,24 +1,24 @@
-let words = [];
+let userResponses = [];
 
-function saveWords() {
-    localStorage.setItem('words', JSON.stringify(words));
+function saveUserResponses() {
+    localStorage.setItem('userResponses', JSON.stringify(userResponses));
 }
 
 
 const inputApi = {
     getAll() {
-        const json = localStorage.getItem('words');
+        const json = localStorage.getItem('userResponses');
         if(json) {
-            words = JSON. parse(json);
+            userResponses = JSON. parse(json);
         }
-        return words;
+        return userResponses;
     },
     
-    add(word) {
+    add(userResponse) {
         // 1. add to our array
-        words.push(word);
+        userResponses.push(userResponse);
         // 2. save array to localStorage
-        saveWords();
+        saveUserResponses();
     }
 };
 
