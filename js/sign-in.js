@@ -47,10 +47,8 @@ export default class GameInfo {
             user.name = elements.name.value;
             user.story = elements.story.value;
             userApi.add(user);
-            console.log('user', user);
             window.location.href = '../game.html';
         });
-        
         return dom;
     }
 }

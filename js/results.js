@@ -27,13 +27,10 @@ export default class Results {
         if(this.user.story === 'piranha') {
             const story1 = new Story1(this.userResponse);
             storySection.appendChild(story1.render());
-        }
-        else if(this.user.story === 'wedding') {
+        } else if(this.user.story === 'wedding') {
             const story2 = new Story2(this.userResponse);
             storySection.appendChild(story2.render());
-            console.log('story 2 picked');
-        }
-        else if(this.user.story === 'alchemy') {
+        } else if(this.user.story === 'alchemy') {
             const story3 = new Story3(this.userResponse);
             storySection.appendChild(story3.render());
         }
@@ -42,7 +39,6 @@ export default class Results {
         button.addEventListener('click', function() {
             window.location = './index.html';
         });
-
         return dom;
     }
 }
