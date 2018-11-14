@@ -2,41 +2,49 @@ body {
     width: 100vw;
 }
 
-.pic {
-    width: 250px;
-    height: 200px;
-    border-radius: 180px;
-    margin-left: 15px;
-    margin-right: 15px;
+/* photo container for flexbox to work*/
+.photos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
 }
 
+/*pics of us*/
+.pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: transform .2s;
+}
+
+.pic:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*background pic*/
 .oregonpic {
     opacity: 0.2;
     position: absolute;
     height: auto;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     z-index: -1;
     left: 0px;
 }
 
-p {
+.names {
     text-align: center;
     font-size: 1.3em;
-    
 }
 
 .blurb {
     padding-top: 100px;
     margin-left: 150px;
     margin-right: 150px;
-}
-
-.photos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; 
+    font-size: 1.5em;
 }
 
 

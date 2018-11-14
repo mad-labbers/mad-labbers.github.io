@@ -6,22 +6,22 @@ function makeTemplate() {
         <h1>Meet the Mad Labbers</h1>
         <section class="photos">
             <div id="kristin">
-                <p>Kristin Hortsch</p>
+                <p class="names">Kristin Hortsch</p>
                 <img src="images/kristin.jpeg" alt="photo-of-kristin" class="pic"/>
             </div>
             
             <div id="ivan">
-                <p>Ivan Poblete</p>
+                <p class="names">Ivan Poblete</p>
                 <img src="images/Ivan.jpeg" alt="photo-of-Ivan" class="pic"/>
             </div>
 
             <div id="jei">
-                <p>Jei Shepherd</p>
+                <p class="names">Jei Shepherd</p>
                 <img src="images/Jei.jpeg" alt="photo-of-Jei" class="pic"/>
             </div>
 
             <div id="connor">
-                <p>Connor Frendt</p>
+                <p class="names">Connor Frendt</p>
                 <img src="images/Connor.jpeg" alt="photo-of-Connor" class="pic"/>
             </div>
         </section>
