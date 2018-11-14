@@ -15,8 +15,8 @@ function makeTemplate() {
         <input type="radio" id="wedding" name="story" value="wedding" required />
         <label for="wedding">Wedding Advice for the Happy Couple</label>
 
-        <input type="radio" id="alchemy" name="story" value="alchemy" required />
-        <label for="alchemy">Dragon</label>
+        <input type="radio" id="dragon" name="story" value="dragon" required />
+        <label for="dragon">Dragon</label>
 
         <div class="button">
             <button id="play-button">Play!</button>
