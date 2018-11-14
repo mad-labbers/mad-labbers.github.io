@@ -20,3 +20,14 @@ p, li {
     position: relative;
 }
 
+span.dragon {
+    color: maroon;
+}
+
+span.wedding {
+    color: darkgreen;
+}
+
+span.piranha {
+    color: darkblue;
+}
