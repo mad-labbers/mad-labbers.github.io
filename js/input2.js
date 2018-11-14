@@ -26,7 +26,7 @@ function makeTemplate() {
 
                     <div>    
                         <label for="place">Place</label>
-                        <input class="word" type="text" name="place" id="noun2">
+                        <input class="word" type="text" name="place"  id="place">
                     </div>
 
                     <div>    
