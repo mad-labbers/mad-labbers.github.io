@@ -10,7 +10,7 @@ function makeTemplate() {
 
                     <div>
                         <label for="adjective">Adjective</label>
-                        <input class="word" type="text" name="sdjective" id="adjective">
+                        <input class="word" type="text" name="adjective" id="adjective">
                     </div>
 
                     <div>    

@@ -1,6 +1,7 @@
 import Game1 from './input1.js';
 import Game2 from './input2.js';
 import Game3 from './input3.js';
+import Game4 from './input4.js';
 import html from './html.js';
 import userApi from '../data/user-api.js';
 
@@ -34,7 +35,7 @@ class Form {
             gameSection.appendChild(game.render());
 
         } else if(this.user.story === 'star-wars') {
-            const game = new Game5();
+            const game = new Game4();
             gameSection.appendChild(game.render());
             
         }

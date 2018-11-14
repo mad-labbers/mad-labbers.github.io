@@ -4,6 +4,7 @@ import userApi from '../data/user-api.js';
 import Story1 from './story1.js';
 import Story2 from './story2.js';
 import Story3 from './story3.js';
+import Story4 from './story4.js';
 
 function makeTemplate() {
     return html`
@@ -43,6 +44,12 @@ export default class Results {
             const story3 = new Story3(this.userResponse);
             storySection.appendChild(story3.render());
             image.src = 'http://s3-ap-southeast-2.amazonaws.com/lmhstore/wp-content/uploads/2018/04/15114026/Screen-Shot-2018-04-15-at-11.24.34-AM.png';
+        }
+
+        else if(this.user.story === 'star-wars') {
+            const story4 = new Story4(this.userResponse);
+            storySection.appendChild(story4.render());
+            image.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1280px-Star_Wars_Logo.svg.png';
         }
 
         let button = dom.querySelector('button');
