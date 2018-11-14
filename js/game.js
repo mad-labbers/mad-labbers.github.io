@@ -23,7 +23,8 @@ class Form {
        
         if(this.user.story === 'piranha') {
             const game = new Game1();
-            gameSection.appendChild(game.render());   
+            gameSection.appendChild(game.render());
+
         } else if(this.user.story === 'wedding') {
             const game = new Game2();
             gameSection.appendChild(game.render());
@@ -31,6 +32,11 @@ class Form {
         } else if(this.user.story === 'dragon') {
             const game = new Game3();
             gameSection.appendChild(game.render());
+
+        } else if(this.user.story === 'star-wars') {
+            const game = new Game5();
+            gameSection.appendChild(game.render());
+            
         }
         return dom;
     }
