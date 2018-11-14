@@ -8,7 +8,7 @@ function makeTemplate() {
             <ol>
                 <li>Choose a story theme.</li>
                 <li>Input words in the form that match the given direction.</li>
-                <li>Click submit to view your completed story. Share with friends as its sure to bring a laugh!</li>
+                <li>Click submit to view your completed story. Share with friends as it's sure to bring a laugh!</li>
             </ol>
         </section>
     `;
