@@ -50,12 +50,18 @@ button:hover {
 
 span.dragon {
     color: maroon;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 span.wedding {
     color: darkgreen;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 span.piranha {
     color: darkblue;
+    font-weight: bold;
+    text-decoration: underline;
 }
