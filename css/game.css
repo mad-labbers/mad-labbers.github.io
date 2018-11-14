@@ -1,4 +1,64 @@
+#root {
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+
+.background-pic {
+    opacity: 0.9;
+    position: absolute;
+    height: auto;
+    width: 100vw;
+    height: 180vh;
+    z-index: -1;
+    left: 0px;
+}
+
+h1 {
+    border-bottom: 5px solid black;
+    margin
+}
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
 div {
     display: inline-block;
-    
+    margin: 10px 30px;
+}
+
+input {
+    border: 2px solid black;
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.5em;
+    margin-right: 3px;
+}
+
+legend {
+    font-size: 2.1em;
+}
+
+fieldset {
+    margin: 50px 150px 20px 150px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+button {
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px;
+    font-family: "spicy rice";
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: lightgreen;
+    box-shadow: 1px 3px black;
 }
