@@ -7,7 +7,7 @@ function makeTemplate() {
             <fieldset>
                 <h1 class="title">Enter a Word</h1>
                 
-                <div class="input-section">
+                <div id="piranha-input">
                     <div>
                         <label for="foreign-country">Foreign Country</label>
                         <input class="word" type="text" name="foreign-country" id="foreign-country">
@@ -72,7 +72,7 @@ function makeTemplate() {
                         <label for="verb2">Verb</label>
                         <input class="word" type="text" name="verb2" id="verb2">
                     </div>
-                </div class="input-section">
+                </div>
             </fieldset>
 
             <button type="submit">Submit</button>
