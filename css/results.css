@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 img {
     margin: auto;
     left: 0px;
@@ -18,5 +20,35 @@ h1 {
 p, li {
     z-index: 10;
     position: relative;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
 }
+
+li {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+button {
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px;
+    font-family: "spicy rice";
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: lightgreen;
+    box-shadow: 1px 3px black;
+}
+
+
+
+
 
