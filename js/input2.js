@@ -18,13 +18,13 @@ function makeTemplate() {
             </div>
 
             <div>    
-                <label for="verb">Verb</label>
+                <label for="verb">Past-Tense Verb</label>
                 <input class="word" type="text" name="verb" id="verb">
             <div>
 
             <div>    
-                <label for="noun2">Noun</label>
-                <input class="word" type="text" name="noun2" id="noun2">
+                <label for="place">Place</label>
+                <input class="word" type="text" name="place" id="noun2">
             </div>
 
             <div>    

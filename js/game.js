@@ -8,7 +8,7 @@ function makeTemplate() {
     return html`
             <section></section>
     `;
-}
+}   
 
 class Form {
     constructor() {
@@ -20,20 +20,14 @@ class Form {
        
         if(this.user.story === 'piranha') {
             const game = new Game1();
-            gameSection.appendChild(game.render());
-
-            console.log('story 1 picked');
-
+            gameSection.appendChild(game.render());   
         } else if(this.user.story === 'wedding') {
             const game = new Game2();
             gameSection.appendChild(game.render());
-            console.log('story 2 picked');
 
-        } else if(this.user.story === 'alchemy') {
+        } else if(this.user.story === 'dragon') {
             const game = new Game3();
             gameSection.appendChild(game.render());
-            console.log('story 3 picked');
-
         }
 
         return dom;
