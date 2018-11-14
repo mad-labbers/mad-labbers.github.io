@@ -2,23 +2,31 @@ import html from './html.js';
 
 function makeTemplate() {
     return html`
-        <header></header>
+        <section class="photos">
+            <div id="kristin">
+                <p>Kristin Hortsch</p>
+                <img src="images/kristin.jpeg" alt="photo-of-kristin"/>
+            </div>
+            
+            <div id="ivan">
+                <p>Ivan Poblete</p>
+                <img src="images/Ivan.jpeg" alt="photo-of-Ivan"/>
+            </div>
 
-        <h2>Kristin Hortsch</h2>
-        <img src="images/kristin.jpeg" alt="photo-of-kristin"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div id="jei">
+                <p>Jei Shepherd</p>
+                <img src="images/Jei.jpeg" alt="photo-of-Jei"/>
+            </div>
+
+            <div id="connor">
+                <p>Connor Frendt</p>
+                <img src="images/Connor.jpeg" alt="photo-of-Connor"/>
+            </div>
+        </section>
         
-        <h2>Ivan Poblete</h2>
-        <img src="images/Ivan.jpeg" alt="photo-of-Ivan"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        
-        <h2>Jei Shepherd</h2>
-        <img src="images/Jei.jpeg" alt="photo-of-Jei"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        
-        <h2>Connor Frendt</h2>
-        <img src="images/Connor.jpeg" alt="photo-of-Connor"/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>We are "Mad Labbers", a team of budding Developers attending Alchemy Code Lab in
+        Portland, Oregon. We are in our final week of Boot Camp I. Our team has created this
+        fun Mad Libs App together and we hope that you enjoy it! </p>
     `;
 }
 

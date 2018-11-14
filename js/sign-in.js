@@ -6,6 +6,7 @@ function makeTemplate() {
     return html `
     <h1>Sign In</h1>
     <form id="user-form">
+
         <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
@@ -20,8 +21,8 @@ function makeTemplate() {
                 <label for="wedding">Wedding Advice for the Happy Couple</label>
             </div>
             <div id="theme-3">
-                <input type="radio" id="alchemy" name="story" value="alchemy" required />
-                <label for="alchemy">Dragon</label>
+                <input type="radio" id="dragon" name="story" value="dragon" required />
+                <label for="dragon">Dragon</label>
             </div>
         </div>
         <div class="button">
