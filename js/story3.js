@@ -9,7 +9,7 @@ let template = function(userResponse) {
         `;
 };
 
-export default class Story1 {
+export default class Story3 {
     constructor(userResponse) {
         this.userResponse = userResponse;
     }
