@@ -6,28 +6,36 @@ function makeTemplate() {
     return html `
     <h1>Sign In</h1>
     <form id="user-form">
+    <div class="themes">
+    
+        <div class="choices">
+    
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
 
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-        </div>
-        <div class="themes">
             <div id="theme-1">
                 <input type="radio" id="piranha" name="story" value="piranha" required />
                 <label for="piranha">How to Cross a Piranha-Infested River</label>
             </div>
+
             <div id="theme-2">
                 <input type="radio" id="wedding" name="story" value="wedding" required />
                 <label for="wedding">Wedding Advice for the Happy Couple</label>
             </div>
+
             <div id="theme-3">
                 <input type="radio" id="dragon" name="story" value="dragon" required />
                 <label for="dragon">Dragon</label>
             </div>
         </div>
-        <div class="button">
-            <button id="play-button">Play!</button>
-        </div>
+    </div>
+
+    <div class="button">
+        <button id="play-button">Play!</button>
+    </div>
+
     </form>
     `;
 }

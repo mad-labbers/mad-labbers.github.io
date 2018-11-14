@@ -1,24 +1,42 @@
-img {
-    width: 200px;
+body {
+    width: 100vw;
+}
+
+.pic {
+    width: 250px;
     height: 200px;
+    border-radius: 180px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.oregonpic {
+    opacity: 0.2;
+    position: absolute;
+    height: auto;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    left: 0px;
 }
 
 p {
     text-align: center;
     font-size: 1.3em;
+    
+}
+
+.blurb {
+    padding-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .photos {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center; 
 }
 
-body {
-    background-image: 100%;
 
-}
-
-body {
-    background-image: 100%
-}
