@@ -8,6 +8,7 @@ function makeTemplate() {
     return html`
             <section>
                 <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+                <img class="background-pic2" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
                 <div class="input-form">
             </section>
     `;

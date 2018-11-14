@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+
+
+.background-pic {
+    opacity: 0.9;
+    position: absolute;
+    height: auto;
+    width: 100vw;
+    height: 180vh;
+    z-index: -1;
+    left: 0px;
+}
+
+.title {
+    border-bottom: 5px solid black;
+    padding-top: 0px;
+    margin-top: 20px;
+}
+
+section {
+    margin: 50px 200px 20px 200px;
+    background-color: white;
+    border: 3px solid black;
+}
+
+li {
+    padding: 10px;
+    font-size: 2em;
+    text-align: left;
+    margin: 0px 105px;
+    font-family: 'indie flower';
+}
