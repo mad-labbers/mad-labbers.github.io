@@ -31,9 +31,10 @@ nav {
 }
 
 h1 {
-    padding-left: 20px;
-    font-size: 3em;
-    font-family: 'Spicy Rice', cursive;
+    padding: 20px;
+    font-family: 'spicy rice';
+    font-size: 4em;
+    text-align: center;
 }
 
 a {
