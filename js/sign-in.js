@@ -1,18 +1,21 @@
 import html from './html.js';
 import userApi from '../data/user-api.js';
 
-
+//src="https://static8.depositphotos.com/1005738/908/v/950/depositphotos_9080572-stock-illustration-social-media-talk-bubble-texture.jpg"
 function makeTemplate() {
     return html `
-    <h1>Sign In</h1>
+    <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
     <form id="user-form">
     <div class="themes">
+        
     
-        <div class="choices">
-    
-            <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+    <div class="choices">
+            <div class="mini-header">
+                <h1>Sign In</h1>
+                <div>
+                    <label class="name" for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
             </div>
 
             <div id="theme-1">

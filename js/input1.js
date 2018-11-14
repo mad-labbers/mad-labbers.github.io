@@ -5,7 +5,7 @@ function makeTemplate() {
     return html`
         <form id="game">
             <fieldset>
-                <Legend>Enter a Word</Legend>
+                <h1>Enter a Word</h1>
                 <div>
                     <label for="foreign-country">Foreign Country</label>
                     <input class="word" type="text" name="foreign-country" id="foreign-country">
