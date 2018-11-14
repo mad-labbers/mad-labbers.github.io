@@ -16,7 +16,6 @@
 
 h1 {
     border-bottom: 5px solid black;
-    margin
 }
 
 
@@ -24,6 +23,7 @@ body {
     padding: 0px;
     margin: 0px;
 }
+
 div {
     display: inline-block;
     margin: 10px 30px;
