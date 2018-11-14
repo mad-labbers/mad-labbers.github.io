@@ -31,8 +31,8 @@ export default class Results {
         if(this.user.story === 'piranha') {
             const story1 = new Story1(this.userResponse);
             storySection.appendChild(story1.render());
-            image.src = 'https://us.123rf.com/450wm/rubynurbaidi/rubynurbaidi1601/rubynurbaidi160100021/50658653-illustration-of-cute-cartoon-piranha-.jpg?ver=6';
         }
+
         else if(this.user.story === 'wedding') {
             const story2 = new Story2(this.userResponse);
             storySection.appendChild(story2.render());
@@ -48,7 +48,6 @@ export default class Results {
         button.addEventListener('click', function() {
             window.location = './index.html';
         });
-
         return dom;
     }
 }

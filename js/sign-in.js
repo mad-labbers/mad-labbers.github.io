@@ -6,18 +6,25 @@ function makeTemplate() {
     return html `
     <h1>Sign In</h1>
     <form id="user-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-            
-        <input type="radio" id="piranha" name="story" value="piranha" required />
-        <label for="piranha">How to Cross a Piranha-Infested River</label>
-        
-        <input type="radio" id="wedding" name="story" value="wedding" required />
-        <label for="wedding">Wedding Advice for the Happy Couple</label>
 
-        <input type="radio" id="dragon" name="story" value="dragon" required />
-        <label for="dragon">Dragon</label>
-
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="themes">
+            <div id="theme-1">
+                <input type="radio" id="piranha" name="story" value="piranha" required />
+                <label for="piranha">How to Cross a Piranha-Infested River</label>
+            </div>
+            <div id="theme-2">
+                <input type="radio" id="wedding" name="story" value="wedding" required />
+                <label for="wedding">Wedding Advice for the Happy Couple</label>
+            </div>
+            <div id="theme-3">
+                <input type="radio" id="dragon" name="story" value="dragon" required />
+                <label for="dragon">Dragon</label>
+            </div>
+        </div>
         <div class="button">
             <button id="play-button">Play!</button>
         </div>
@@ -41,10 +48,8 @@ export default class GameInfo {
             user.name = elements.name.value;
             user.story = elements.story.value;
             userApi.add(user);
-            console.log('user', user);
             window.location.href = '../game.html';
         });
-        
         return dom;
     }
 }

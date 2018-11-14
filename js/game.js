@@ -20,6 +20,7 @@ class Form {
        
         if(this.user.story === 'piranha') {
             const game = new Game1();
+
             gameSection.appendChild(game.render());   
         } else if(this.user.story === 'wedding') {
             const game = new Game2();
@@ -29,7 +30,6 @@ class Form {
             const game = new Game3();
             gameSection.appendChild(game.render());
         }
-
         return dom;
     }
 }
