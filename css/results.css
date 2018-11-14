@@ -48,7 +48,14 @@ button:hover {
     box-shadow: 1px 3px black;
 }
 
+span.dragon {
+    color: maroon;
+}
 
+span.wedding {
+    color: darkgreen;
+}
 
-
-
+span.piranha {
+    color: darkblue;
+}

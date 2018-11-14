@@ -24,7 +24,7 @@ function makeTemplate() {
 
             <div>    
                 <label for="place">Place</label>
-                <input class="word" type="text" name="place" id="noun2">
+                <input class="word" type="text" name="place" id="place">
             </div>
 
             <div>    
@@ -115,11 +115,11 @@ export default class Game2 {
             event.preventDefault();
             const elements = form.elements;
             const userResponse = {};
-
+            
             userResponse.name = elements.name.value;
             userResponse.number = elements.number.value;
             userResponse.verb = elements.verb.value;
-            userResponse.noun2 = elements.noun2.value;
+            userResponse.place = elements.place.value;
             userResponse.adjective = elements.adjective.value;
             userResponse.adjective2 = elements.adjective2.value;
             userResponse.noun3 = elements.noun3.value;
@@ -134,7 +134,6 @@ export default class Game2 {
             userResponse.verb6 = elements.verb6.value;
             userResponse.noun7 = elements.noun7.value;
             userResponse.noun8 = elements.noun8.value;
-            
             inputApi.add(userResponse);
             
             window.location = './results.html';
