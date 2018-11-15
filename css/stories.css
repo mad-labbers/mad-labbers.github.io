@@ -11,6 +11,10 @@ img {
     height: 150vh;
 }
 
+.hidden {
+    display: none;
+}
+
 h1 {
     text-align: center;
     z-index: 10;
@@ -59,10 +63,6 @@ span.wedding {
 }
 span.piranha {
     color: darkblue;
-    text-decoration: underline;
-}
-span.stars {
-    color: red;
     text-decoration: underline;
 }
 span.news {
