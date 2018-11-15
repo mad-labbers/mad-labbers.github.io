@@ -15,6 +15,11 @@ img {
     display: none;
 }
 
+ul {
+    font-size: 0.7em;
+    line-height: 0.7em;
+}
+
 h1 {
     text-align: center;
     z-index: 10;
@@ -33,6 +38,8 @@ li {
     margin-left: 150px;
     margin-right: 150px;
     text-align: left;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 p {

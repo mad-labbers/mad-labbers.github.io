@@ -3,7 +3,7 @@
     position: absolute;
     height: auto;
     width: 100vw;
-    height: 140vh;
+    height: 160vh;
     z-index: -1;
     left: 0px;
 }
@@ -33,6 +33,7 @@ button {
     margin: 25px;
     font-family: "spicy rice";
     border: 2px solid black;
+    margin-bottom: 100px;
 }
 
 button:hover {
