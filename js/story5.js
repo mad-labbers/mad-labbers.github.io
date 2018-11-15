@@ -22,7 +22,7 @@ let template = function(userResponse) {
                     realized they were stuck and had to wait for <span class="news">${userResponse.personintheroom}</span> to save them.
                 </p>
 
-                // <audio autoplay></audio>
+                <audio autoplay></audio>
         </div>
         `;
 };
