@@ -39,7 +39,7 @@ function makeTemplate() {
                     </div>
 
                     <div>    
-                        <label for="pluralnoun2">Noun</label>
+                        <label for="pluralnoun2">Plural Noun</label>
                         <input class="word" type="text" name="pluralnoun2" id="pluralnoun2">
                     </div>
 

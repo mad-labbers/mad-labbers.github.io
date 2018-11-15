@@ -1,50 +1,55 @@
 import html from './html.js';
 import userApi from '../data/user-api.js';
 
-//src="https://static8.depositphotos.com/1005738/908/v/950/depositphotos_9080572-stock-illustration-social-media-talk-bubble-texture.jpg"
 function makeTemplate() {
     return html `
     <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
     <form id="user-form">
-    <div class="themes">
-        
-    
-    <div class="choices">
-            <div class="mini-header">
-                <h1>Sign In</h1>
-                <div>
-                    <label class="name" for="name">Name:</label>
-                    <input type="text" id="name" name="name">
+        <div class="themes">
+            <div class="choices">
+
+                <div class="mini-header">
+                    <h1>Sign In</h1>
+                    <div>
+                        <label class="name" for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+
+                <div class="story-option">
+                    <input type="radio" id="piranha" name="story" value="piranha" required />
+                    <label for="piranha">How to Cross a Piranha-Infested River</label>
+                </div>
+
+                <div class="story-option">
+                    <input type="radio" id="wedding" name="story" value="wedding" required />
+                    <label for="wedding">Wedding Advice for the Happy Couple</label>
+                </div>
+                
+                <div class="story-option">
+                    <input type="radio" id="dragon" name="story" value="dragon" required />
+                    <label for="dragon">Caution: Dragon</label>
+                </div>
+
+
+                <div class="story-option">
+                    <input type="radio" id="star-wars" name="story" value="star-wars" required />
+                    <label for="star-wars">The Power of the Force</label>
+                </div>
+
+                <div class="story-option">
+                    <input type="radio" id="star-wars" name="story" value="news" required />
+                    <label for="news">News of the Weird</label>
                 </div>
             </div>
 
-            <div class="story-option">
-                <input type="radio" id="piranha" name="story" value="piranha" required />
-                <label for="piranha">How to Cross a Piranha-Infested River</label>
-            </div>
-
-            <div class="story-option">
-                <input type="radio" id="wedding" name="story" value="wedding" required />
-                <label for="wedding">Wedding Advice for the Happy Couple</label>
-            </div>
-            
-            <div class="story-option">
-                <input type="radio" id="dragon" name="story" value="dragon" required />
-                <label for="dragon">Caution: Dragon</label>
-            </div>
-
-            <div class="story-option">
-                <input type="radio" id="star-wars" name="story" value="news" required />
-                <label for="news">News of the Weird</label>
-            </div>
-            
+        <div class="button">
+            <button id="play-button">Play!</button>
         </div>
-    </div>
+    </form>
 
-    <div class="button">
-        <button id="play-button">Play!</button>
-    </div>
-
+    <form id="button-form">
+        <button id="music-button">Music On/Off</button>
     </form>
     `;
 }
