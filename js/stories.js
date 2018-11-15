@@ -8,11 +8,12 @@ import Blurb from './blurb.js';
 
 function makeTemplate() {
     return html`
-        <body>
+        <div>
             <ul id="stories">
-                <li></li>
+                
             </ul>
-        </body>
+            <section id="story-detail"></section>
+        </div>
     `;
 }
 
@@ -24,24 +25,17 @@ export default class SavedStories {
         const dom = makeTemplate();
         const stories = storiesApi.getAll();
         const ul = dom.querySelector('ul');
+        const section = dom.querySelector('section');
         for(let i = 0; i < stories.length; i++) {
             const story = stories[i];
-            const blurb = new Blurb(story);
+            const blurb = new Blurb(story, () => {
+                if(story.choice === 'piranha') {
+                    const story1 = new Story1(story.responses).render();
+                    section.appendChild(story1);
+                }
+            });
             ul.appendChild(blurb.render());
-            const li = dom.querySelector('li');
-            if(story.choice === 'piranha') {
-                const story1 = new Story1(story.responses);
-                li.appendChild(story1.render());
-                ul.addEventListener('click', function() {
-                    if(li.style.display === 'none') {
-                        li.style.display = 'block';
-                    }
-                    else {
-                        li.style.display = 'none';
-                    }
-                });
-
-            }
+            
         
         
         // for(let i = 0; i < this.stories.length; i++) {
