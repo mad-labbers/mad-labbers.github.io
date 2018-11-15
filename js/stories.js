@@ -62,3 +62,7 @@ export default class SavedStories {
 const savedStories = new SavedStories();
 const test = document.getElementById('root');
 test.appendChild(savedStories.render());
+const audio = document.querySelectorAll('audio');
+audio.forEach(a => {
+    a.muted = true;
+});

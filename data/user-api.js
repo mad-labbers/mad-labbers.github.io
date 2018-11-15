@@ -7,7 +7,6 @@ const userApi = {
     getAll() {
         return JSON.parse(localStorage.getItem('user'));
     },
-
     add(user) {
         saveUsers(user);
     }
