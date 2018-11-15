@@ -41,11 +41,11 @@ function makeTemplate() {
                     <input type="radio" id="star-wars" name="story" value="news" required />
                     <label for="news">News of the Weird</label>
                 </div>
+                <div class="button">
+                    <button id="play-button">Play!</button>
+                </div>
             </div>
 
-        <div class="button">
-            <button id="play-button">Play!</button>
-        </div>
     </form>
     `;
 }
