@@ -5,97 +5,101 @@ function makeTemplate() {
     return html`
         <form id="game">
             <fieldset>
-                <Legend>Enter a Word</Legend>
+    
+                <h1 class="title">Enter a Word</h1>
 
-            <div>
-                <label for="name">Your Name</label>
-                <input class="word" type="text" name="name" id="name">
-            </div>
+                <div class="input-form">
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input class="word" type="text" name="name" id="name">
+                    </div>
 
-            <div>    
-                <label for="number">Number</label>
-                <input class="word" type="number" name="number" id="number">
-            </div>
+                    <div>    
+                        <label for="number">Number</label>
+                        <input class="word" type="number" name="number" id="number">
+                    </div>
 
-            <div>    
-                <label for="verb">Past-Tense Verb</label>
-                <input class="word" type="text" name="verb" id="verb">
-            <div>
+                    <div>    
+                        <label for="verb">Past-Tense Verb</label>
+                        <input class="word" type="text" name="verb" id="verb">
+                    <div>
 
-            <div>    
-                <label for="place">Place</label>
-                <input class="word" type="text" name="place" id="noun2">
-            </div>
+                    <div>    
+                        <label for="place">Place</label>
+                        <input class="word" type="text" name="place"  id="place">
+                    </div>
 
-            <div>    
-                <label for="adjective">Adjective</label>
-                <input class="word" type="text" name="adjective" id="adjective">
-            </div>
+                    <div>    
+                        <label for="adjective">Adjective</label>
+                        <input class="word" type="text" name="adjective" id="adjective">
+                    </div>
 
-            <div>    
-                <label for="adjective2">Adjective</label>
-                <input class="word" type="text" name="adjective2" id="adjective2">
-            </div>
+                    <div>    
+                        <label for="adjective2">Adjective</label>
+                        <input class="word" type="text" name="adjective2" id="adjective2">
+                    </div>
 
-            <div>    
-                <label for="noun3">Noun</label>
-                <input class="word" type="text" name="noun3" id="noun3">
-            </div>
+                    <div>    
+                        <label for="noun3">Noun</label>
+                        <input class="word" type="text" name="noun3" id="noun3">
+                    </div>
 
-            <div>    
-                <label for="adjective3">Adjective</label>
-                <input class="word" type="text" name="adjective3" id="adjective3">
-            </div>
+                    <div>    
+                        <label for="adjective3">Adjective</label>
+                        <input class="word" type="text" name="adjective3" id="adjective3">
+                    </div>
+                    
+                    <div>    
+                        <label for="noun4">Noun</label>
+                        <input class="word" type="text" name="noun4" id="noun4">
+                    </div>
+
+                    <div>    
+                        <label for="verb2">Verb</label>
+                        <input class="word" type="text" name="verb2" id="verb2">
+                    </div>
+
+                    <div>    
+                        <label for="verb3">Verb</label>
+                        <input class="word" type="text" name="verb3" id="verb3">
+                    </div>
+
+                    <div>    
+                        <label for="verb4">Verb</label>
+                        <input class="word" type="text" name="verb4" id="verb4">
+                    </div>
+
+                    <div>
+                        <label for="noun5">Noun</label>
+                        <input class="word" type="text" name="noun5" id="noun5">
+                    </div>
+
+                    <div>    
+                        <label for="verb5">Verb</label>
+                        <input class="word" type="text" name="verb5" id="verb5">
+                    </div>
+
+                    <div>
+                        <label for="noun6">Noun</label>
+                        <input class="word" type="text" name="noun6" id="noun6">
+                    </div>
+
+                    <div>
+                        <label for="verb6">Verb</label>
+                        <input class="word" type="text" name="verb6" id="verb6">
+                    </div>
+
+                    <div>
+                        <label for="noun7">Noun</label>
+                        <input class="word" type="text" name="noun7" id="noun7">
+                    </div>
+
+                    <div>    
+                        <label for="noun8">Noun</label>
+                        <input class="word" type="text" name="noun8" id="noun8">
+                    </div>
+                </div>
             
-            <div>    
-                <label for="noun4">Noun</label>
-                <input class="word" type="text" name="noun4" id="noun4">
-            </div>
-
-            <div>    
-                <label for="verb2">Verb</label>
-                <input class="word" type="text" name="verb2" id="verb2">
-            </div>
-
-            <div>    
-                <label for="verb3">Verb</label>
-                <input class="word" type="text" name="verb3" id="verb3">
-            </div>
-
-            <div>    
-                <label for="verb4">Verb</label>
-                <input class="word" type="text" name="verb4" id="verb4">
-            </div>
-
-            <div>
-                <label for="noun5">Noun</label>
-                <input class="word" type="text" name="noun5" id="noun5">
-            </div>
-
-            <div>    
-                <label for="verb5">Verb</label>
-                <input class="word" type="text" name="verb5" id="verb5">
-            </div>
-
-            <div>
-                <label for="noun6">Noun</label>
-                <input class="word" type="text" name="noun6" id="noun6">
-            </div>
-
-            <div>
-                <label for="verb6">Verb</label>
-                <input class="word" type="text" name="verb6" id="verb6">
-            </div>
-
-            <div>
-                <label for="noun7">Noun</label>
-                <input class="word" type="text" name="noun7" id="noun7">
-            </div>
-
-            <div>    
-                <label for="noun8">Noun</label>
-                <input class="word" type="text" name="noun8" id="noun8">
-            </div>
             </fieldset>
 
             <button type="submit">Submit</button>
@@ -115,11 +119,11 @@ export default class Game2 {
             event.preventDefault();
             const elements = form.elements;
             const userResponse = {};
-
+            
             userResponse.name = elements.name.value;
             userResponse.number = elements.number.value;
             userResponse.verb = elements.verb.value;
-            userResponse.noun2 = elements.noun2.value;
+            userResponse.place = elements.place.value;
             userResponse.adjective = elements.adjective.value;
             userResponse.adjective2 = elements.adjective2.value;
             userResponse.noun3 = elements.noun3.value;
@@ -134,7 +138,6 @@ export default class Game2 {
             userResponse.verb6 = elements.verb6.value;
             userResponse.noun7 = elements.noun7.value;
             userResponse.noun8 = elements.noun8.value;
-            
             inputApi.add(userResponse);
             
             window.location = './results.html';

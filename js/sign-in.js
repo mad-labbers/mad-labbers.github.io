@@ -18,22 +18,22 @@ function makeTemplate() {
                 </div>
             </div>
 
-            <div id="theme-1">
+            <div class="story-option">
                 <input type="radio" id="piranha" name="story" value="piranha" required />
                 <label for="piranha">How to Cross a Piranha-Infested River</label>
             </div>
 
-            <div id="theme-2">
+            <div class="story-option">
                 <input type="radio" id="wedding" name="story" value="wedding" required />
                 <label for="wedding">Wedding Advice for the Happy Couple</label>
             </div>
             
-            <div id="theme-3">
+            <div class="story-option">
                 <input type="radio" id="dragon" name="story" value="dragon" required />
                 <label for="dragon">Caution: Dragon</label>
             </div>
 
-            <div id="theme-4">
+            <div class="story-option">
                 <input type="radio" id="star-wars" name="story" value="star-wars" required />
                 <label for="star-wars">The Power of the Force</label>
             </div>

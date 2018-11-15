@@ -1,5 +1,6 @@
 import html from './html.js';
 import inputApi from '../data/input-api.js';
+import storiesApi from '../data/stories-api.js';
 import userApi from '../data/user-api.js';
 import Story1 from './story1.js';
 import Story2 from './story2.js';
@@ -28,6 +29,12 @@ export default class Results {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
         const image = dom.querySelector('img');
+        const story = {
+            choice: this.user.story,
+            responses: this.userResponse
+        };
+        storiesApi.getAll();
+        storiesApi.add(story);
         
         if(this.user.story === 'piranha') {
             const story1 = new Story1(this.userResponse);

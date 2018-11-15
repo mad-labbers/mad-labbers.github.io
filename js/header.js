@@ -4,6 +4,8 @@ function makeTemplate() {
     return html`
         <nav>
             <a href="./index.html">Home</a>
+            <a href="./instructions.html">Instructions</a>
+            <a href="./stories.html">Stories</a>
             <a href="./labbers.html">About Us</a>
         </nav>
     `;

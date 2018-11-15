@@ -21,7 +21,6 @@ let template = function(userResponse) {
                 a Jedi should ${userResponse.adverb2} trust in the Force.
             </p>
             <audio autoplay></audio>
-                
         </div>
         `;
 };
