@@ -3,6 +3,7 @@ import Game2 from './input2.js';
 import Game3 from './input3.js';
 import Game4 from './input4.js';
 import Game5 from './input5.js';
+import Game6 from './input6.js';
 import html from './html.js';
 import userApi from '../data/user-api.js';
 
@@ -27,25 +28,28 @@ class Form {
         if(this.user.story === 'piranha') {
             const game = new Game1();
             gameSection.appendChild(game.render());
-
-        } else if(this.user.story === 'wedding') {
+        } 
+        else if(this.user.story === 'wedding') {
             const game = new Game2();
             gameSection.appendChild(game.render());
-
-        } else if(this.user.story === 'dragon') {
+        } 
+        else if(this.user.story === 'dragon') {
             const game = new Game3();
             gameSection.appendChild(game.render());
-
-        } else if(this.user.story === 'star-wars') {
+        } 
+        else if(this.user.story === 'star-wars') {
             const game = new Game4();
             gameSection.appendChild(game.render());
-
-        } else if(this.user.story === 'news') {
+        } 
+        else if(this.user.story === 'news') {
             const game = new Game5();
             gameSection.appendChild(game.render());
-        
+        } 
+        else if(this.user.story === 'bed-story') {
+            const game = new Game6();
+            gameSection.appendChild(game.render());
+        } 
 
-        }
         return dom;
     }
 }

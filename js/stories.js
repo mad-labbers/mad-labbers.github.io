@@ -5,6 +5,7 @@ import Story2 from './story2.js';
 import Story3 from './story3.js';
 import Story4 from './story4.js';
 import Story5 from './story5.js';
+import Story6 from './story6.js';
 import Blurb from './blurb.js';
 
 function makeTemplate() {
@@ -55,6 +56,10 @@ export default class SavedStories {
                 else if(story.choice === 'news') {
                     const story5 = new Story5(story.responses).render();
                     section.appendChild(story5);
+                }
+                else if(story.choice === 'bed-story') {
+                    const story6 = new Story6(story.responses).render();
+                    section.appendChild(story6);
                 }
             });
             ul.appendChild(blurb.render());
