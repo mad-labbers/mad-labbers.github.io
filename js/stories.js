@@ -1,15 +1,19 @@
 import html from './html.js';
 import storiesApi from '../data/stories-api.js';
-import Story1 from './story1.js';
-import Story2 from './story2.js';
-import Story3 from './story3.js';
-import Story4 from './story4.js';
+// import Story1 from './story1.js';
+// import Story2 from './story2.js';
+// import Story3 from './story3.js';
+// import Story4 from './story4.js';
+import Blurb from './blurb.js';
 
 function makeTemplate() {
     return html`
         <body>
             <img>
-            <section class="saved-stories"></section>
+            <section class="saved-stories">
+                <ul>
+                </ul>
+            </section>
         </body>
     `;
 }
@@ -21,27 +25,39 @@ export default class SavedStories {
     render() {
         const dom = makeTemplate();
         this.stories = storiesApi.getAll();
-        const savedStorySection = dom.querySelector('.saved-stories');
+        const list = dom.querySelector('ul');
+        const blurb = new Blurb();
+        list.appendChild(blurb.render());
         
-        for(let i = 0; i < this.stories.length; i++) {
-            const story = this.stories[i];
-            if(story.choice === 'piranha') {
-                const story1 = new Story1(story.responses);
-                savedStorySection.appendChild(story1.render());
-            }
-            else if(story.choice === 'wedding') {
-                const story2 = new Story2(story.responses);
-                savedStorySection.appendChild(story2.render());
-            }
-            else if(story.choice === 'dragon') {
-                const story3 = new Story3(story.responses);
-                savedStorySection.appendChild(story3.render());
-            }
-            else if(story.choice === 'star-wars') {
-                const story4 = new Story4(story.responses);
-                savedStorySection.appendChild(story4.render());
-            }
-        }
+        
+        // for(let i = 0; i < this.stories.length; i++) {
+        //     const story = this.stories[i];
+        //     if(story.choice === 'piranha') {
+        //         const story1 = new Story1(story.responses);
+        //         list.appendChild(story1.render());
+        //         list.addEventListener('click', function() {
+        //             if(list.style.display === 'none') {
+        //                 list.style.display = 'block';
+        //             }
+        //             else {
+        //                 list.style.display = 'none';
+        //             }
+        //         });
+                
+        //     }
+        //     else if(story.choice === 'wedding') {
+        //         const story2 = new Story2(story.responses);
+        //         list.appendChild(story2.render());
+        //     }
+        //     else if(story.choice === 'dragon') {
+        //         const story3 = new Story3(story.responses);
+        //         list.appendChild(story3.render());
+        //     }
+        //     else if(story.choice === 'star-wars') {
+        //         const story4 = new Story4(story.responses);
+        //         list.appendChild(story4.render());
+        //     }
+        // }
         return dom;
     }
 }
