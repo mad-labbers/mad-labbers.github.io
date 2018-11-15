@@ -10,102 +10,102 @@ function makeTemplate() {
                 <div class="input-form">
                     <div>
                         <label for="place1">A Place</label>
-                        <input class="word" type="text" name="place1" id="place1">
+                        <input class="word" type="text" name="place1" id="place1" required>
                     </div>
 
                     <div>    
                         <label for="adjective1">Adjective</label>
-                        <input class="word" type="text" name="adjective1" id="adjective1">
+                        <input class="word" type="text" name="adjective1" id="adjective1" required>
                     </div>
 
                     <div>
                         <label for="fname">Female Name</label>
-                        <input class="word" type="text" name="fname" id="fname">
+                        <input class="word" type="text" name="fname" id="fname" required>
                     </div>  
 
                     <div>
                         <label for="body-part1">Body Part</label>
-                        <input class="word" type="text" name="body-part1" id="body-part1">
+                        <input class="word" type="text" name="body-part1" id="body-part1" required>
                     </div>
 
                     <div>
                         <label for="body-part2">Body Part</label>
-                        <input class="word" type="text" name="body-part2" id="body-part2">
+                        <input class="word" type="text" name="body-part2" id="body-part2" required>
                     </div>
 
                     <div>
                         <label for="organ">Human Organ</label>
-                        <input class="word" type="text" name="organ" id="organ">
+                        <input class="word" type="text" name="organ" id="organ" required>
                     </div> 
 
                     <div>
                         <label for="adjective2">Adjective</label>
-                        <input class="word" type="text" name="adjective2" id="adjective2">
+                        <input class="word" type="text" name="adjective2" id="adjective2" required>
                     </div>  
 
                     <div>
                         <label for="mname">Male Name</label>
-                        <input class="word" type="text" name="mname" id="mname">
+                        <input class="word" type="text" name="mname" id="mname" required>
                     </div> 
                     
                     <div>
                         <label for="adjective3">Adjective</label>
-                        <input class="word" type="text" name="adjective3" id="adjective3">
+                        <input class="word" type="text" name="adjective3" id="adjective3" required>
                     </div> 
 
                     <div>
                         <label for="body-part3">Body Part</label>
-                        <input class="word" type="text" name="body-part3" id="body-part3">
+                        <input class="word" type="text" name="body-part3" id="body-part3" required>
                     </div>  
 
                     <div>
                         <label for="body-part4">Body Part</label>
-                        <input class="word" type="text" name="body-part4" id="body-part4">
+                        <input class="word" type="text" name="body-part4" id="body-part4" required>
                     </div>
 
                     <div>
                         <label for="place2">A Place</label>
-                        <input class="word" type="text" name="place2" id="place2">
+                        <input class="word" type="text" name="place2" id="place2" required>
                     </div>    
                     
                     <div>
                         <label for="name1">A Name</label>
-                        <input class="word" type="text" name="name1" id="name1">
+                        <input class="word" type="text" name="name1" id="name1" required>
                     </div>
 
                     <div>
                         <label for="animal1">Animal</label>
-                        <input class="word" type="text" name="animal1" id="animal1">
+                        <input class="word" type="text" name="animal1" id="animal1" required>
                     </div>
 
                     <div>
                         <label for="verb1">Verb</label>
-                        <input class="word" type="text" name="verb1" id="verb1">
+                        <input class="word" type="text" name="verb1" id="verb1" required>
                     </div>
 
                     <div>
                         <label for="number1">Number</label>
-                        <input class="word" type="number" name="number1" id="number1">
+                        <input class="word" type="number" name="number1" id="number1" required>
                     </div>
 
                     <div>
                         <label for="body-part5">Body Part</label>
-                        <input class="word" type="text" name="body-part5" id="body-part5">
+                        <input class="word" type="text" name="body-part5" id="body-part5" required>
                     </div>
 
                     <div>
                         <label for="adjective4">Adjective</label>
-                        <input class="word" type="text" name="adjective4" id="adjective4">
+                        <input class="word" type="text" name="adjective4" id="adjective4" required>
                     </div>
 
                     <div>
                         <label for="adjective5">Adjective</label>
-                        <input class="word" type="text" name="adjective5" id="adjective5">
+                        <input class="word" type="text" name="adjective5" id="adjective5" required>
                     </div>
 
                     <div>
                         <label for="verb2">Verb (Past Tense)</label>
-                        <input class="word" type="text" name="verb2" id="verb2">
+                        <input class="word" type="text" name="verb2" id="verb2" required>
                     </div>
                 </div>
             </fieldset>

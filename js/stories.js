@@ -4,14 +4,18 @@ import Story1 from './story1.js';
 import Story2 from './story2.js';
 import Story3 from './story3.js';
 import Story4 from './story4.js';
+import Story5 from './story5.js';
 import Story6 from './story6.js';
+import Blurb from './blurb.js';
 
 function makeTemplate() {
     return html`
-        <body>
-            <img>
-            <section class="saved-stories"></section>
-        </body>
+        <div>
+            <ul id="stories">
+                
+            </ul>
+            <section id="story-detail"></section>
+        </div>
     `;
 }
 
@@ -38,13 +42,28 @@ export default class SavedStories {
             } else if(story.choice === 'star-wars') {
                 const story4 = new Story4(story.responses);
                 savedStorySection.appendChild(story4.render());
+            } else if(story.choice === 'news') {
+                const story5 = new Story5(story.responses).render();
+                section.appendChild(story5);
             } else if(story.choice === 'bed-story') {
                 const story6 = new Story6(story.responses);
                 savedStorySection.appendChild(story6.render());
             }
+        const stories = storiesApi.getAll();
+        const ul = dom.querySelector('ul');
+        const section = dom.querySelector('section');
+        for(let i = 0; i < stories.length; i++) {
+            const story = stories[i];
+            const blurb = new Blurb(story, () => {
+                while(section.lastElementChild) {
+                    section.lastElementChild.remove();
+                }
+            });
+            ul.appendChild(blurb.render());
         }
         return dom;
     }
+       
 }
 
 const savedStories = new SavedStories();

@@ -11,6 +11,10 @@ img {
     height: 150vh;
 }
 
+.hidden {
+    display: none;
+}
+
 h1 {
     text-align: center;
     z-index: 10;
@@ -61,16 +65,7 @@ span.piranha {
     color: darkblue;
     text-decoration: underline;
 }
-span.stars {
-    color: red;
-    text-decoration: underline;
-}
-<<<<<<< HEAD
-span.bed {
-    color: purple;
-=======
 span.news {
     color: red;
->>>>>>> b6f9bb7d18ad441edce152bb5f3519792e2d19f9
     text-decoration: underline;
 }

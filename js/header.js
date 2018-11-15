@@ -13,6 +13,7 @@ function makeTemplate() {
 
 export default class Header {
     render() {
-        return makeTemplate();
+        const dom = makeTemplate();
+        return dom;
     }
 }
