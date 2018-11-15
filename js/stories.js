@@ -4,6 +4,7 @@ import Story1 from './story1.js';
 import Story2 from './story2.js';
 import Story3 from './story3.js';
 import Story4 from './story4.js';
+import Story5 from './story5.js';
 
 function makeTemplate() {
     return html`
@@ -40,6 +41,10 @@ export default class SavedStories {
             else if(story.choice === 'star-wars') {
                 const story4 = new Story4(story.responses);
                 savedStorySection.appendChild(story4.render());
+            }
+            else if(story.choice === 'news') {
+                const story5 = new Story5(story.responses);
+                savedStorySection.appendChild(story5.render());
             }
         }
         return dom;

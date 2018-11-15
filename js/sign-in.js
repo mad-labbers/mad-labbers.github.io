@@ -34,9 +34,10 @@ function makeTemplate() {
             </div>
 
             <div class="story-option">
-                <input type="radio" id="star-wars" name="story" value="star-wars" required />
-                <label for="star-wars">The Power of the Force</label>
+                <input type="radio" id="star-wars" name="story" value="news" required />
+                <label for="news">News of the Weird</label>
             </div>
+            
         </div>
     </div>
 

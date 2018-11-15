@@ -173,7 +173,7 @@ export default class Game5 {
             userResponse.verb4 = elements.verb4.value;
             userResponse.noun4 = elements.noun4.value;
             userResponse.verbpasttense2 = elements.verbpasttense2.value;
-            userResponse.adjcetive = elements.adjcetive.value;
+            userResponse.adjective = elements.adjective.value;
             userResponse.typeofworkers = elements.typeofworkers.value;
             userResponse.noun5 = elements.noun5.value;
             userResponse.verbpasttense3 = elements.verbpasttense3.value;

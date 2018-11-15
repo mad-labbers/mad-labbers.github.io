@@ -22,8 +22,8 @@ let template = function(userResponse) {
                     realized they were stuck and had to wait for ${userResponse.personintheroom} to save them.
                 </p>
 
-            <audio autoplay></audio>
-            </div>
+                // <audio autoplay></audio>
+        </div>
         `;
 };
 
@@ -33,9 +33,9 @@ export default class Story5 {
     }
     render() {
         let dom = template(this.userResponse);
-        let sound = dom.querySelector('audio');
-        sound.src = '../sounds/.mp3';
-        dom.appendChild(sound);
+        // let sound = dom.querySelector('audio');
+        // // sound.src = '../sounds/.mp3';
+        // dom.appendChild(sound);
         return dom;
     }
 }

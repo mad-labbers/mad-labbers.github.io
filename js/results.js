@@ -63,7 +63,7 @@ export default class Results {
         else if(this.user.story === 'news') {
             const story5 = new Story5(this.userResponse);
             storySection.appendChild(story5.render());
-            image.src = '';
+            image.src = './images/jail.png';
         }
 
         let button = dom.querySelector('button');
