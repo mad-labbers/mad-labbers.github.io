@@ -2,6 +2,11 @@ body {
     width: 100vw;
 }
 
+.labbers {
+    color: red;
+    text-decoration: underline;
+}
+
 /* photo container for flexbox to work*/
 .photos {
     display: flex;
