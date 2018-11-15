@@ -10,6 +10,8 @@ import Blurb from './blurb.js';
 function makeTemplate() {
     return html`
         <div>
+            <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+
             <ul id="stories">
                 
             </ul>
