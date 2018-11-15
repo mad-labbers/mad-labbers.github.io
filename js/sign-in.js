@@ -47,10 +47,6 @@ function makeTemplate() {
             <button id="play-button">Play!</button>
         </div>
     </form>
-
-    <form id="button-form">
-        <button id="music-button">Music On/Off</button>
-    </form>
     `;
 }
 
