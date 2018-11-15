@@ -1,29 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-img {
-    margin: auto;
-    left: 0px;
-    right: 0px;
-    opacity: 0.3;
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 150vh;
+body {
+    padding: 0px;
+    margin: 0px;
 }
 
-.hidden {
-    display: none;
+.title {
+    padding: 0px;
+    margin: 0px;
+}
+
+.background-pic {
+    opacity: 0.9;
+    position: absolute;
+    height: auto;
+    width: 100vw;
+    height: 1100px;
+    z-index: -1;
+    left: 0px;
+}
+
+.background-pic2 {
+    opacity: 0.9;
+    position: absolute;
+    top: 1270px;
+    height: auto;
+    width: 100vw;
+    height: 140vh;
+    z-index: -5;
+    left: 0px; 
+}
+
+.selected-story {
+    font-size: 2.5em;
+}
+
+.fish {
+    line-height: 1.4;
+    font-size: 2em;
+    border: none;
+    list-style-type: circle;
+    background-color: transparent;
+}
+
+.story-list {
+    margin-top: 40px;
 }
 
 ul {
     font-size: 0.7em;
     line-height: 0.7em;
+    padding: 0px;
+    margin: 0px;
 }
 
 h1 {
     text-align: center;
     z-index: 10;
     position: relative;
+    margin: 0px;
+    padding: 0px;
 }
 
 p, li {
@@ -35,43 +71,44 @@ p, li {
 }
 
 li {
-    margin-left: 150px;
-    margin-right: 150px;
-    text-align: left;
-    margin-top: 0px;
-    padding-top: 0px;
-}
-
-p {
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-button {
-    font-size: 2em;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 25px;
-    font-family: "spicy rice";
+    text-align: center;
+    text-decoration: none;
+    margin: 10px auto;
+    list-style-type: none;
+    cursor: pointer;
     border: 2px solid black;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: #7fff7f;
 }
 
-button:hover {
-    background-color: lightgreen;
-    box-shadow: 1px 3px black;
+li:hover {
+    background-color: transparent;
 }
+
+section {
+    background-color: white;
+    border: 2px solid black;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 15px;
+}
+
 span.dragon {
     color: maroon;
     text-decoration: underline;
 }
+
 span.wedding {
     color: darkgreen;
     text-decoration: underline;
 }
+
 span.piranha {
     color: darkblue;
     text-decoration: underline;
 }
+
 span.news {
     color: red;
     text-decoration: underline;

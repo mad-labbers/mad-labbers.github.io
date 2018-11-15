@@ -9,13 +9,13 @@ import Blurb from './blurb.js';
 
 function makeTemplate() {
     return html`
-        <div>
-            <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
-
-            <ul id="stories">
-                
-            </ul>
-            <section id="story-detail"></section>
+        <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+        <img class="background-pic2" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+        <div class="story-list">
+            <ul id="stories"></ul>
+            <section id="story-detail">
+                <h1 class="selected-story">Selected Story</h1>
+            </section>
         </div>
     `;
 }
