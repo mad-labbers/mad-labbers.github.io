@@ -15,7 +15,7 @@ let template = function(userResponse) {
                 use the Force to move objects with his or her ${userResponse.bodypart2}. 
                 It doesn't matter how ${userResponse.adjective4} these objects are; it
                 only matters how ${userResponse.adverb} the Jedi believes in the Force.
-                Most importantly, the Force teaches a Jedi t reply on his or her feelings.
+                Most importantly, the Force teaches a Jedi to rely on his or her feelings.
                 As Obi-Wan Kenobi told his student Luke, ${userResponse.noun2}-walker: "Your
                 ${userResponse.bodypart3} can deceive you. Don't trust them. "Instead
                 a Jedi should ${userResponse.adverb2} trust in the Force.
