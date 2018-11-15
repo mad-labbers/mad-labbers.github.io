@@ -47,4 +47,3 @@ class Form {
 const form = new Form();
 const root = document.getElementById('root');
 root.appendChild(form.render());
-
