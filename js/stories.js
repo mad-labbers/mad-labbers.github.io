@@ -1,6 +1,6 @@
 import html from './html.js';
 import storiesApi from '../data/stories-api.js';
-// import Story1 from './story1.js';
+import Story1 from './story1.js';
 // import Story2 from './story2.js';
 // import Story3 from './story3.js';
 // import Story4 from './story4.js';
@@ -9,11 +9,9 @@ import Blurb from './blurb.js';
 function makeTemplate() {
     return html`
         <body>
-            <img>
-            <section class="saved-stories">
-                <ul>
-                </ul>
-            </section>
+            <ul id="stories">
+                <li></li>
+            </ul>
         </body>
     `;
 }
@@ -24,10 +22,26 @@ export default class SavedStories {
     }
     render() {
         const dom = makeTemplate();
-        this.stories = storiesApi.getAll();
-        const list = dom.querySelector('ul');
-        const blurb = new Blurb();
-        list.appendChild(blurb.render());
+        const stories = storiesApi.getAll();
+        const ul = dom.querySelector('ul');
+        for(let i = 0; i < stories.length; i++) {
+            const story = stories[i];
+            const blurb = new Blurb(story);
+            ul.appendChild(blurb.render());
+            const li = dom.querySelector('li');
+            if(story.choice === 'piranha') {
+                const story1 = new Story1(story.responses);
+                li.appendChild(story1.render());
+                ul.addEventListener('click', function() {
+                    if(li.style.display === 'none') {
+                        li.style.display = 'block';
+                    }
+                    else {
+                        li.style.display = 'none';
+                    }
+                });
+
+            }
         
         
         // for(let i = 0; i < this.stories.length; i++) {
@@ -58,9 +72,11 @@ export default class SavedStories {
         //         list.appendChild(story4.render());
         //     }
         // }
+        }
         return dom;
     }
 }
+
 
 const savedStories = new SavedStories();
 const test = document.getElementById('root');
