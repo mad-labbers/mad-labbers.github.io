@@ -16,7 +16,7 @@ let template = function(userResponse) {
                  only matters how <span class="stars">${userResponse.adverb}</span> the Jedi believes in the Force.
                  Most importantly, the Force teaches a Jedi t reply on his or her feelings.
                  As Obi-Wan Kenobi told his student Luke, <span class="stars">${userResponse.noun2}</span>-walker: "Your
-                 <span class="stars">${userResponse.bodypart3}</span> can deceive you. Don't trust them. "Instead
+                 <span class="stars">${userResponse.bodypart3}</span> can deceive you. Don't trust them." Instead
                  a Jedi should <span class="stars">${userResponse.adverb2}</span> trust in the Force.
                  </p>
         </div>
