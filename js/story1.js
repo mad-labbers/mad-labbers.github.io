@@ -4,7 +4,8 @@ let template = function(userResponse) {
     return html` 
         <div class="piranha">
             <h1>How to Cross a Piranha-Infested River</h1>
-                <p>If you are traveling in <span class="piranha">${userResponse.foreignCountry}</span> and find yourself having to cross a piranha-filled river, here's how to do it <span class="piranha">${userResponse.adverb1}</span>: 
+                <p>
+                    If you are traveling in <span class="piranha">${userResponse.foreignCountry}</span> and find yourself having to cross a piranha-filled river, here's how to do it <span class="piranha">${userResponse.adverb1}</span>: 
                     <ul>
                         <li>Piranhas are more <span class="piranha">${userResponse.adjective1}</span> during the day, so cross the river at night.</li>
                         <li>Avoid areas with netted <span class="piranha">${userResponse.animal}</span> traps--piranhas may be <span class="piranha">${userResponse.verbIng1}</span> there looking to<span class="piranha"> ${userResponse.verb1}</span> them!</li>
