@@ -28,16 +28,13 @@ export default class SavedStories {
             if(story.choice === 'piranha') {
                 const story1 = new Story1(story.responses);
                 savedStorySection.appendChild(story1.render());
-            }
-            else if(story.choice === 'wedding') {
+            } else if(story.choice === 'wedding') {
                 const story2 = new Story2(story.responses);
                 savedStorySection.appendChild(story2.render());
-            }
-            else if(story.choice === 'dragon') {
+            } else if(story.choice === 'dragon') {
                 const story3 = new Story3(story.responses);
                 savedStorySection.appendChild(story3.render());
-            }
-            else if(story.choice === 'star-wars') {
+            } else if(story.choice === 'star-wars') {
                 const story4 = new Story4(story.responses);
                 savedStorySection.appendChild(story4.render());
             }
