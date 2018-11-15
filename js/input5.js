@@ -5,7 +5,8 @@ function makeTemplate() {
     return html`
         <form id="game">
             <fieldset>
-                <h1>Enter a Word</h1>
+                <h1 class="title">Enter a Word</h1>
+                
                 <div class="input form">
 
                     <div>

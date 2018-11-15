@@ -47,6 +47,7 @@ a {
     text-align: center;
     background-color: white;
     transition: transform .2s;
+    cursor: pointer;
 }
 
 a:hover {
