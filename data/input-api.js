@@ -8,9 +8,7 @@ const inputApi = {
     },
     
     add(userResponse) {
-        // 1. add to our array
-        // userResponses.push(userResponse);
-        // 2. save array to localStorage
+        //Save array to localStorage
         saveUserResponses(userResponse);
     }
 };

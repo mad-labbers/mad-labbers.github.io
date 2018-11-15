@@ -6,6 +6,7 @@ import Story1 from './story1.js';
 import Story2 from './story2.js';
 import Story3 from './story3.js';
 import Story4 from './story4.js';
+import Story5 from './story5.js';
 
 function makeTemplate() {
     return html`
@@ -57,6 +58,12 @@ export default class Results {
             const story4 = new Story4(this.userResponse);
             storySection.appendChild(story4.render());
             image.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1280px-Star_Wars_Logo.svg.png';
+        }
+
+        else if(this.user.story === 'news') {
+            const story5 = new Story5(this.userResponse);
+            storySection.appendChild(story5.render());
+            image.src = './images/jail.png';
         }
 
         let button = dom.querySelector('button');
