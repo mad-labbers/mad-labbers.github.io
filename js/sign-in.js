@@ -1,7 +1,6 @@
 import html from './html.js';
 import userApi from '../data/user-api.js';
 
-//src="https://static8.depositphotos.com/1005738/908/v/950/depositphotos_9080572-stock-illustration-social-media-talk-bubble-texture.jpg"
 function makeTemplate() {
     return html `
     <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
@@ -36,6 +35,11 @@ function makeTemplate() {
             <div class="story-option">
                 <input type="radio" id="star-wars" name="story" value="star-wars" required />
                 <label for="star-wars">The Power of the Force</label>
+            </div>
+
+            <div class="story-option">
+                <input type="radio" id="bed-story" name="story" value="bed-story" required />
+                <label for="bed-story">The World's Worst Bed Time Story</label>
             </div>
         </div>
     </div>
