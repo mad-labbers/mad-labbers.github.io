@@ -26,8 +26,8 @@ function makeTemplate() {
             </div>
         </section>
         
-        <p class="blurb">We are "Mad Labbers", a team of budding Developers attending Alchemy Code Lab in
-        Portland, Oregon. We are in our final week of Boot Camp I. Our team has created this
+        <p class="blurb">We are <span class="labbers">"Mad Labbers"</span>, a team of budding developers attending <span class="labbers">Alchemy Code Lab</span> in
+        Portland, Oregon. We are in our <span class="labbers">final</span> week of Boot Camp I. Our team has created this
         fun Mad Libs App together and we hope that you enjoy it! </p>
     `;
 }
