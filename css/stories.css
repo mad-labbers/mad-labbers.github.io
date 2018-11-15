@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+img {
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 150vh;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+p, li {
+    z-index: 10;
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+li {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: left;
+}
+
+p {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+button {
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 25px;
+    font-family: "spicy rice";
+    border: 2px solid black;
+}
+
+button:hover {
+    background-color: lightgreen;
+    box-shadow: 1px 3px black;
+}
+span.dragon {
+    color: maroon;
+    text-decoration: underline;
+}
+span.wedding {
+    color: darkgreen;
+    text-decoration: underline;
+}
+span.piranha {
+    color: darkblue;
+    text-decoration: underline;
+}
+span.stars {
+    color: red;
+    text-decoration: underline;
+}
