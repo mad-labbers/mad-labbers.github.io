@@ -33,7 +33,7 @@ function makeTemplate() {
                     </div>
 
                     <div>    
-                        <label for="verb2">Verb</label>
+                        <label for="verb2">Verb (end in -ing)</label>
                         <input class="word" type="text" name="verb2" id="verb2">
                     </div>
 
