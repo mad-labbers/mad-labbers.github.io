@@ -1,10 +1,21 @@
 .background-pic {
-    opacity: 0.6;
+    opacity: 0.9;
     position: absolute;
     height: auto;
     width: 100vw;
-    height: 180vh;
+    height: 1100px;
     z-index: -1;
+    left: 0px; 
+}
+
+.background-pic2 {
+    opacity: 0.9;
+    position: absolute;
+    top: 1270px;
+    height: auto;
+    width: 100vw;
+    height: 140vh;
+    z-index: -5;
     left: 0px;
 }
 

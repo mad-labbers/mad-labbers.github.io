@@ -4,6 +4,7 @@ import userApi from '../data/user-api.js';
 function makeTemplate() {
     return html`
     <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+    <img class="background-pic2" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">    
     <form id="user-form">
         <div class="themes">
             <div class="choices">
