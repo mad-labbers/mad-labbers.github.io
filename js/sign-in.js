@@ -2,12 +2,12 @@ import html from './html.js';
 import userApi from '../data/user-api.js';
 
 function makeTemplate() {
-    return html `
+    return html`
     <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
     <form id="user-form">
         <div class="themes">
             <div class="choices">
-
+                
                 <div class="mini-header">
                     <h1>Sign In</h1>
                     <div>
@@ -50,7 +50,6 @@ function makeTemplate() {
                     <button id="play-button">Play!</button>
                 </div>
             </div>
-
     </form>
     `;
 }
@@ -59,7 +58,6 @@ export default class GameInfo {
     constructor() {
         this.user = userApi.getAll();
     }
-
     render() {
         let dom = makeTemplate();
         const form = dom.getElementById('user-form');
@@ -70,7 +68,9 @@ export default class GameInfo {
 
             user.name = elements.name.value;
             user.story = elements.story.value;
+            
             userApi.add(user);
+            
             window.location.href = '../game.html';
         });
         return dom;

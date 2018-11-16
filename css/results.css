@@ -49,26 +49,33 @@ button:hover {
     background-color: lightgreen;
     box-shadow: 1px 3px black;
 }
+
 span.dragon {
     color: maroon;
     text-decoration: underline;
 }
+
 span.wedding {
     color: darkgreen;
     text-decoration: underline;
 }
+
 span.piranha {
     color: darkblue;
     text-decoration: underline;
 }
+
 span.stars {
     color: red;
     text-decoration: underline;
 }
+
 span.news {
     color: red;
     text-decoration: underline;
 }
+
 span.bed {
     color: purple;
+    text-decoration: underline;
 }

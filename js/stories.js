@@ -41,22 +41,27 @@ export default class SavedStories {
                     const story1 = new Story1(story.responses).render();
                     section.appendChild(story1);
                 }
+
                 else if(story.choice === 'wedding') {
                     const story2 = new Story2(story.responses).render();
                     section.appendChild(story2);
                 }
+
                 else if(story.choice === 'dragon') {
                     const story3 = new Story3(story.responses).render();
                     section.appendChild(story3);
                 }
+
                 else if(story.choice === 'star-wars') {
                     const story4 = new Story4(story.responses).render();
                     section.appendChild(story4);
                 }
+
                 else if(story.choice === 'news') {
                     const story5 = new Story5(story.responses).render();
                     section.appendChild(story5);
                 }
+
                 else if(story.choice === 'bed-story') {
                     const story6 = new Story6(story.responses).render();
                     section.appendChild(story6);
@@ -66,13 +71,11 @@ export default class SavedStories {
         }
         return dom;
     }
-       
 }
 
-
 const savedStories = new SavedStories();
-const test = document.getElementById('root');
-test.appendChild(savedStories.render());
+const root = document.getElementById('root');
+root.appendChild(savedStories.render());
 const audio = document.querySelectorAll('audio');
 audio.forEach(a => {
     a.muted = true;

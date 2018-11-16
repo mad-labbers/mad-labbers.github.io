@@ -9,11 +9,11 @@ import userApi from '../data/user-api.js';
 
 function makeTemplate() {
     return html`
-            <section>
-                <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
-                <img class="background-pic2" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
-                <div class="input-form">
-            </section>
+        <section>
+            <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+            <img class="background-pic2" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
+            <div class="input-form">
+        </section>
     `;
 }   
 
@@ -49,7 +49,6 @@ class Form {
             const game = new Game6();
             gameSection.appendChild(game.render());
         } 
-
         return dom;
     }
 }
@@ -57,4 +56,3 @@ class Form {
 const form = new Form();
 const root = document.getElementById('root');
 root.appendChild(form.render());
-

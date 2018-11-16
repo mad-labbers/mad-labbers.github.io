@@ -5,9 +5,7 @@ function makeTemplate() {
     return html`
         <form id="game">
             <fieldset>
-    
                 <h1 class="title">Enter a Word</h1>
-
                 <div class="input-form">
                     <div>
                         <label for="name">Your Name</label>
@@ -99,9 +97,7 @@ function makeTemplate() {
                         <input class="word" type="text" name="noun8" id="noun8">
                     </div>
                 </div>
-            
             </fieldset>
-
             <button type="submit">Submit</button>
         </form>
     `;
@@ -111,7 +107,6 @@ export default class Game2 {
     constructor() {
         this.userResponses = inputApi.getAll();
     }
-    
     render() {
         const dom = makeTemplate();
         const form = dom.querySelector('form');
@@ -138,6 +133,7 @@ export default class Game2 {
             userResponse.verb6 = elements.verb6.value;
             userResponse.noun7 = elements.noun7.value;
             userResponse.noun8 = elements.noun8.value;
+            
             inputApi.add(userResponse);
             
             window.location = './results.html';

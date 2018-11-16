@@ -13,9 +13,7 @@ function makeTemplate() {
     return html`
         <body>
             <img>
-            <section class="story-result">
-            
-            </section>
+            <section class="story-result"></section>
             <button>Play Again</button>
         </body>
     `;
@@ -26,15 +24,16 @@ export default class Results {
         this.userResponse = inputApi.getAll();
         this.user = userApi.getAll();
     }
-
     render() {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
         const image = dom.querySelector('img');
+        
         const story = {
             choice: this.user.story,
             responses: this.userResponse
         };
+
         storiesApi.getAll();
         storiesApi.add(story);
         
@@ -49,6 +48,7 @@ export default class Results {
             storySection.appendChild(story2.render());
             image.src = 'http://www.zimbojam.com/wp-content/uploads/2018/01/wedding-02.jpg';
         }
+
         else if(this.user.story === 'dragon') {
             const story3 = new Story3(this.userResponse);
             storySection.appendChild(story3.render());

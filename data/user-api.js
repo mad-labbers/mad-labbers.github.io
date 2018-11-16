@@ -3,7 +3,6 @@ function saveUsers(user) {
 }
 
 const userApi = {
-
     getAll() {
         return JSON.parse(localStorage.getItem('user'));
     },

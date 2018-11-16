@@ -9,7 +9,7 @@ let template = function(userResponse) {
             </p>
             <audio autoplay></audio>
         </div>
-        `;
+    `;
 };
 
 export default class Story2 {
@@ -24,4 +24,3 @@ export default class Story2 {
         return dom;
     }
 }
-

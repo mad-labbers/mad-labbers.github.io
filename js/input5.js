@@ -6,11 +6,9 @@ function makeTemplate() {
         <form id="game">
             <fieldset>
                 <h1 class="title">Enter a Word</h1>
-                
                 <div class="input form">
-
                     <div>
-                        <label for="noun">noun</label>
+                        <label for="noun">Noun</label>
                         <input class="word" type="text" name="noun" id="noun">
                     </div>
 
@@ -20,12 +18,12 @@ function makeTemplate() {
                     </div>
 
                     <div>    
-                        <label for="verb">verb</label>
+                        <label for="verb">Verb (Past Tense)</label>
                         <input class="word" type="text" name="verb" id="verb">
                     <div>
 
                     <div>    
-                        <label for="noun2">noun</label>
+                        <label for="noun2">Noun</label>
                         <input class="word" type="text" name="noun2" id="noun2">
                     </div>
 
@@ -35,109 +33,51 @@ function makeTemplate() {
                     </div>
 
                     <div>    
-                        <label for="verb2">verb</label>
+                        <label for="verb2">Verb</label>
                         <input class="word" type="text" name="verb2" id="verb2">
                     </div>
 
                     <div>    
-                        <label for="noun3">noun</label>
+                        <label for="noun3">Noun</label>
                         <input class="word" type="text" name="noun3" id="noun3">
                     </div>
 
                     <div>    
-                        <label for="verb3">verb</label>
+                        <label for="verb3">Verb</label>
                         <input class="word" type="text" name="verb3" id="verb3">
                     </div>
 
                     <div>    
-                        <label for="noun4">noun</label>
+                        <label for="noun4">Noun</label>
                         <input class="word" type="text" name="noun4" id="noun4">
                     </div>
 
                     <div>    
-                        <label for="bodypart">bodypart</label>
+                        <label for="bodypart">Body Part</label>
                         <input class="word" type="text" name="bodypart" id="bodypart">
                     </div>
 
                     <div>
-                        <label for="city">city</label>
+                        <label for="city">City</label>
                         <input class="word" type="text" name="city" id="city">
                     </div>
 
                     <div>    
-                        <label for="activity">activity</label>
+                        <label for="activity">Activity</label>
                         <input class="word" type="text" name="activity" id="activity">
                     </div>
 
                     <div>
-                        <label for="chainrestaurant">chain restaurant</label>
+                        <label for="chainrestaurant">Chain Restaurant</label>
                         <input class="word" type="text" name="chainrestaurant" id="chainrestaurant">
                     </div>
 
                     <div>
-                        <label for="verbpasttense">verb past tense</label>
+                        <label for="verbpasttense">Verb (Past Tense)</label>
                         <input class="word" type="text" name="verbpasttense" id="verbpasttense">
                     </div>
-
-                    <div>
-                        <label for="month">month</label>
-                        <input class="word" type="text" name="month" id="month">
-                    </div>
-
-                    <div>
-                        <label for="verb4">verb</label>
-                        <input class="word" type="text" name="verb4" id="verb4">
-                    </div>
-
-                    <div>
-                        <label for="noun4">noun4</label>
-                        <input class="word" type="text" name="noun4" id="noun4">
-                    </div>
-
-                    <div>
-                        <label for="verbpasttense2">verb past tense</label>
-                        <input class="word" type="text" name="verbpasttense2" id="verbpasttense2">
-                    </div>
-
-                    <div>
-                        <label for="adjective">adjective</label>
-                        <input class="word" type="text" name="adjective" id="adjective">
-                    </div>
-
-                    <div>
-                        <label for="typeofworkers">type of workers</label>
-                        <input class="word" type="text" name="typeofworkers" id="typeofworkers">
-                    </div>
-
-                    <div>
-                        <label for="noun5">noun</label>
-                        <input class="word" type="text" name="noun5" id="noun5">
-                    </div>
-
-                    <div>
-                        <label for="verbpasttense3">verb past tense</label>
-                        <input class="word" type="text" name="verbpasttense3" id="verbpasttense3">
-                    </div>
-
-                    <div>
-                        <label for="famousperson">famous person</label>
-                        <input class="word" type="text" name="famousperson" id="famousperson">
-                    </div>
-
-                    <div>
-                        <label for="noun6">noun</label>
-                        <input class="word" type="text" name="noun6" id="noun6">
-                    </div>
-
-                    <div>
-                        <label for="personintheroom">person in the room</label>
-                        <input class="word" type="text" name="personintheroom" id="personintheroom">
-                    </div>
-
                 </div>
-
             </fieldset>
-
             <button type="submit">Submit</button>
         </form>
     `;
@@ -147,7 +87,6 @@ export default class Game5 {
     constructor() {
         this.userResponses = inputApi.getAll();
     }
-    
     render() {
         const dom = makeTemplate();
         const form = dom.querySelector('form');
@@ -170,18 +109,6 @@ export default class Game5 {
             userResponse.activity = elements.activity.value;
             userResponse.chainrestaurant = elements.chainrestaurant.value;
             userResponse.verbpasttense = elements.verbpasttense.value;
-            userResponse.month = elements.month.value;
-            userResponse.verb4 = elements.verb4.value;
-            userResponse.noun4 = elements.noun4.value;
-            userResponse.verbpasttense2 = elements.verbpasttense2.value;
-            userResponse.adjective = elements.adjective.value;
-            userResponse.typeofworkers = elements.typeofworkers.value;
-            userResponse.noun5 = elements.noun5.value;
-            userResponse.verbpasttense3 = elements.verbpasttense3.value;
-            userResponse.famousperson = elements.famousperson.value;
-            userResponse.noun6 = elements.noun6.value;
-            userResponse.personintheroom = elements.personintheroom.value;
-            
             
             inputApi.add(userResponse);
             
