@@ -1,5 +1,5 @@
 .background-pic {
-    opacity: 0.9;
+    opacity: 0.6;
     position: absolute;
     height: auto;
     width: 100vw;
@@ -9,7 +9,7 @@
 }
 
 .background-pic2 {
-    opacity: 0.9;
+    opacity: 0.6;
     position: absolute;
     top: 1270px;
     height: auto;
