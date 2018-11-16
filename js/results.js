@@ -7,14 +7,13 @@ import Story2 from './story2.js';
 import Story3 from './story3.js';
 import Story4 from './story4.js';
 import Story5 from './story5.js';
+import Story6 from './story6.js';
 
 function makeTemplate() {
     return html`
         <body>
             <img>
-            <section class="story-result">
-            
-            </section>
+            <section class="story-result"></section>
             <button>Play Again</button>
         </body>
     `;
@@ -25,15 +24,16 @@ export default class Results {
         this.userResponse = inputApi.getAll();
         this.user = userApi.getAll();
     }
-
     render() {
         const dom = makeTemplate();
         const storySection = dom.querySelector('.story-result');
         const image = dom.querySelector('img');
+        
         const story = {
             choice: this.user.story,
             responses: this.userResponse
         };
+
         storiesApi.getAll();
         storiesApi.add(story);
         
@@ -48,6 +48,7 @@ export default class Results {
             storySection.appendChild(story2.render());
             image.src = 'http://www.zimbojam.com/wp-content/uploads/2018/01/wedding-02.jpg';
         }
+
         else if(this.user.story === 'dragon') {
             const story3 = new Story3(this.userResponse);
             storySection.appendChild(story3.render());
@@ -64,6 +65,12 @@ export default class Results {
             const story5 = new Story5(this.userResponse);
             storySection.appendChild(story5.render());
             image.src = './images/jail.png';
+        }
+
+        else if(this.user.story === 'bed-story') {
+            const story6 = new Story6(this.userResponse);
+            storySection.appendChild(story6.render());
+            image.src = './images/bed.png';
         }
 
         let button = dom.querySelector('button');

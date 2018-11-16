@@ -2,12 +2,12 @@ import html from './html.js';
 import userApi from '../data/user-api.js';
 
 function makeTemplate() {
-    return html `
+    return html`
     <img class="background-pic" src="http://smartvectorpics.com/wp-content/uploads/2015/02/White-Speech-Bubbles-With-Colorful-Backgrounds-And-Shadows-In-Flat-Designs.png">
     <form id="user-form">
         <div class="themes">
             <div class="choices">
-
+                
                 <div class="mini-header">
                     <h1>Sign In</h1>
                     <div>
@@ -31,21 +31,25 @@ function makeTemplate() {
                     <label for="dragon">Caution: Dragon</label>
                 </div>
 
-
                 <div class="story-option">
                     <input type="radio" id="star-wars" name="story" value="star-wars" required />
                     <label for="star-wars">The Power of the Force</label>
                 </div>
 
                 <div class="story-option">
-                    <input type="radio" id="star-wars" name="story" value="news" required />
+                    <input type="radio" id="news" name="story" value="news" required />
                     <label for="news">News of the Weird</label>
                 </div>
+
+                <div class="story-option">
+                    <input type="radio" id="bed-story" name="story" value="bed-story" required />
+                    <label for="bed-story">The World's Worst Bed Time Story</label>
+                </div>
+
                 <div class="button">
                     <button id="play-button">Play!</button>
                 </div>
             </div>
-
     </form>
     `;
 }
@@ -54,7 +58,6 @@ export default class GameInfo {
     constructor() {
         this.user = userApi.getAll();
     }
-
     render() {
         let dom = makeTemplate();
         const form = dom.getElementById('user-form');
@@ -65,7 +68,9 @@ export default class GameInfo {
 
             user.name = elements.name.value;
             user.story = elements.story.value;
+            
             userApi.add(user);
+            
             window.location.href = '../game.html';
         });
         return dom;

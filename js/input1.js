@@ -6,7 +6,6 @@ function makeTemplate() {
         <form id="game">
             <fieldset>
                 <h1 class="title">Enter a Word</h1>
-                
                 <div id="piranha-input">
                     <div>
                         <label for="foreign-country">Foreign Country</label>
@@ -74,7 +73,6 @@ function makeTemplate() {
                     </div>
                 </div>
             </fieldset>
-
             <button type="submit">Submit</button>
         </form>
     `;
@@ -84,7 +82,6 @@ export default class Game1 {
     constructor() {
         this.userResponses = inputApi.getAll();
     }
-    
     render() {
         const dom = makeTemplate();
         const form = dom.querySelector('form');

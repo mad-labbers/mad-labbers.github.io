@@ -5,6 +5,7 @@ function makeTemplate() {
         <img src="../images/Portland_Oregon.jpg" class="oregonpic">
         <h1>Meet the Mad Labbers</h1>
         <section class="photos">
+            
             <div id="kristin">
                 <p class="names">Kristin Hortsch</p>
                 <img src="images/kristin.jpeg" alt="photo-of-kristin" class="pic"/>

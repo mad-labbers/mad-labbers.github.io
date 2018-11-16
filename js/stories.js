@@ -5,6 +5,7 @@ import Story2 from './story2.js';
 import Story3 from './story3.js';
 import Story4 from './story4.js';
 import Story5 from './story5.js';
+import Story6 from './story6.js';
 import Blurb from './blurb.js';
 
 function makeTemplate() {
@@ -40,34 +41,41 @@ export default class SavedStories {
                     const story1 = new Story1(story.responses).render();
                     section.appendChild(story1);
                 }
+
                 else if(story.choice === 'wedding') {
                     const story2 = new Story2(story.responses).render();
                     section.appendChild(story2);
                 }
+
                 else if(story.choice === 'dragon') {
                     const story3 = new Story3(story.responses).render();
                     section.appendChild(story3);
                 }
+
                 else if(story.choice === 'star-wars') {
                     const story4 = new Story4(story.responses).render();
                     section.appendChild(story4);
                 }
+
                 else if(story.choice === 'news') {
                     const story5 = new Story5(story.responses).render();
                     section.appendChild(story5);
+                }
+
+                else if(story.choice === 'bed-story') {
+                    const story6 = new Story6(story.responses).render();
+                    section.appendChild(story6);
                 }
             });
             ul.appendChild(blurb.render());
         }
         return dom;
     }
-       
 }
 
-
 const savedStories = new SavedStories();
-const test = document.getElementById('root');
-test.appendChild(savedStories.render());
+const root = document.getElementById('root');
+root.appendChild(savedStories.render());
 const audio = document.querySelectorAll('audio');
 audio.forEach(a => {
     a.muted = true;
