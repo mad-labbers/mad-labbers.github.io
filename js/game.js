@@ -17,7 +17,8 @@ function makeTemplate() {
     `;
 }   
 
-class Form {
+// make sure file and component name are in agreement
+class Game {
     constructor() {
         this.user = userApi.getAll();
     }
@@ -25,6 +26,7 @@ class Form {
         const dom = makeTemplate();
         const gameSection = dom.querySelector('.input-form');
        
+        // see example in stories.js for ways to make this leaner 
         if(this.user.story === 'piranha') {
             const game = new Game1();
             gameSection.appendChild(game.render());
@@ -53,6 +55,6 @@ class Form {
     }
 }
 
-const form = new Form();
+const game = new Game();
 const root = document.getElementById('root');
-root.appendChild(form.render());
+root.appendChild(game.render());
