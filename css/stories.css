@@ -103,6 +103,11 @@ span.wedding {
     color: darkgreen;
     text-decoration: underline;
 }
+/* see comments in story2.js, use a parent selector: */
+.piranha span {
+    color: darkblue;
+    text-decoration: underline;
+}
 
 span.piranha {
     color: darkblue;

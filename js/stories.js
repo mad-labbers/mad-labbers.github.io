@@ -21,6 +21,16 @@ function makeTemplate() {
     `;
 }
 
+// #2a You can also create an object dictionary that maps the key to the component:
+const components = {
+    piranha: Story1,
+    wedding: Story2,
+    dragon:  Story3,
+    'star-wars':  Story4,
+    news: Story5,
+    'bed-story': Story6
+};
+
 export default class SavedStories {
     constructor() {
         this.stories = storiesApi.getAll();
@@ -37,35 +47,36 @@ export default class SavedStories {
                     section.lastElementChild.remove();
                 }
                 
-                if(story.choice === 'piranha') {
-                    const story1 = new Story1(story.responses).render();
-                    section.appendChild(story1);
-                }
+                // #1 limit conditionality to the thing that varies: 
+                // let Story = null;
+                // if(story.choice === 'piranha') {
+                //     Story = Story1;
+                // }
 
-                else if(story.choice === 'wedding') {
-                    const story2 = new Story2(story.responses).render();
-                    section.appendChild(story2);
-                }
+                // else if(story.choice === 'wedding') {
+                //     Story = Story2;
+                // }
 
-                else if(story.choice === 'dragon') {
-                    const story3 = new Story3(story.responses).render();
-                    section.appendChild(story3);
-                }
+                // else if(story.choice === 'dragon') {
+                //     Story = Story3;
+                // }
 
-                else if(story.choice === 'star-wars') {
-                    const story4 = new Story4(story.responses).render();
-                    section.appendChild(story4);
-                }
+                // else if(story.choice === 'star-wars') {
+                //     Story = Story4;
+                // }
 
-                else if(story.choice === 'news') {
-                    const story5 = new Story5(story.responses).render();
-                    section.appendChild(story5);
-                }
+                // else if(story.choice === 'news') {
+                //     Story = Story5;
+                // }
 
-                else if(story.choice === 'bed-story') {
-                    const story6 = new Story6(story.responses).render();
-                    section.appendChild(story6);
-                }
+                // else if(story.choice === 'bed-story') {
+                //     Story = Story6;
+                // }
+
+                // #2b dictionary makes lookup easy:
+                const Story = components[story.choice];
+                const story = new Story(story.responses);
+                section.appendChild(story.render());
             });
             ul.appendChild(blurb.render());
         }
