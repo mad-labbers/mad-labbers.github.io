@@ -5,3 +5,5 @@ We are "Mad Labbers", a team of budding developers attending Alchemy Code Lab in
 Mad Libs is a template word game where one player picks a story theme and then enters a list of words which then are loaded into a story before reading the story aloud. 
 
 Mad Libs logo and other images were used for educational purposes only.   
+
+// initial grading commit
